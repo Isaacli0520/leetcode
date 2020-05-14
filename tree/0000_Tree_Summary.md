@@ -1,6 +1,6 @@
 # Tree Summary
 ### Preorder, Inorder, Postorder Traversal Iteratively
-** Preorder **
+**Preorder**
 ```python
 def Preorder(root):
     stack = [root]
@@ -13,7 +13,7 @@ def Preorder(root):
             stack.append(node.right)
     return res
 ```
-** Inorder **
+**Inorder**
 ```python
 def Inorder(root):
     stack, res = [], []
@@ -27,7 +27,7 @@ def Inorder(root):
     return res
 ```
 
-** Postorder **
+**Postorder**
 ```python
 def Postorder(root):
     stack = [root]
