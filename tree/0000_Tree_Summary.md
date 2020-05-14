@@ -1,7 +1,7 @@
 # Tree Summary
 ### Preorder, Inorder, Postorder Traversal Iteratively
 ** Preorder **
-```
+```python
 def Preorder(root):
     stack = [root]
     res = []
@@ -14,7 +14,7 @@ def Preorder(root):
     return res
 ```
 ** Inorder **
-```
+```python
 def Inorder(root):
     stack, res = [], []
     while root or stack:
@@ -28,7 +28,7 @@ def Inorder(root):
 ```
 
 ** Postorder **
-```
+```python
 def Postorder(root):
     stack = [root]
     res = collections.deque()
