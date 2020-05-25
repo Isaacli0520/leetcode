@@ -39,7 +39,19 @@ class Solution:
                 if i > idx and ls[i] == ls[idx]:
                     continue
                 # Put duplicates at front only once
+                # Example no dup, idx = 0
+                #  1   2  3  4  swap 2 1 
+                # [2] [1] 3  4  swap 3 2
+                # [3]  1 [2] 4  swap 4 3
+                # [4]  1  2 [3] 
+                # Example with dup, idx = 0
+                #  1   2  3  3  4  swap 2 1 
+                # [2] [1] 3  3  4  swap 3 2
+                # [3]  1 [2] 3  4  skip 3 and swap 4 3
+                # [4]  1  2 [3] 3
+                # 3 is put to front for only once
                 ls[idx], ls[i] = ls[i], ls[idx]
+                # Remember use list(ls) to create new list
                 dfs(list(ls), idx + 1)
         nums.sort()
         dfs(nums, 0)
