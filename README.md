@@ -11,3 +11,6 @@ map applies the function to all the items in the input iterable and returns an i
 >>> list(map(lambda x, y: x + y, [1, 2, 3], [3, 4, 5])) 
 [4, 6, 8]
 ```
+### Topological Sort
+DFS?
+
