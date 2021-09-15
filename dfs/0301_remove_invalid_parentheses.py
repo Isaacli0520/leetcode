@@ -1,6 +1,11 @@
 class Solution:
     # BFS
     def removeInvalidParentheses(self, s: str) -> List[str]:
+        # Intuition
+        # 1. Try remove each char from str to see if anyone is valid
+        # 2. If no str is valid, do step 1 again for each str resulted
+        # from step 1.
+        # 3. If any str is valid, return the set
         def isValid(s):
             ctn = 0
             for char in s:
@@ -21,6 +26,13 @@ class Solution:
     
     # DFS
     def removeInvalidParentheses(self, s: str) -> List[str]:
+        # Intuition
+        # 1. Go through the whole str and find extra ")"
+        # 2. Then go through the str to remove extra ")", skipping cases
+        # when previous char is also ")"
+        # 3. For extra "(", reverse the str, and go through the same process,
+        # its the same as extra ")"
+
         res = []
         def dfs(s, check, prev_i, prev_j):
             ctn, i = 0, prev_i
@@ -30,7 +42,6 @@ class Solution:
                 if s[i] == check[1]:
                     ctn -= 1
                 i += 1
-                        
             # No extra ")" detected
             # Reverse to check if extra "(" exists
             if ctn >= 0:
@@ -44,7 +55,7 @@ class Solution:
                     res.append(rvs)
             # Extra ")" detected
             else:
-                # s[i - 1] is the ")" that makes ctn < 0
+                # s[i - 1] is the bracket that makes ctn < 0
                 i -= 1
                 for j in range(prev_j, i + 1):
                     # Skip duplicates
