@@ -1,19 +1,18 @@
 class Solution:
-    def findCircleNum(self, M: List[List[int]]) -> int:
-        r, c = len(M), len(M[0])
-        visited = [0 for i in range(r)]
-        def dfs(i):   
-            # For a students, visit all his/her friends
+    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        # For each city, find all connected city and mark them as visited
+        
+        n = len(isConnected)
+        visited = [0] * n
+        def dfs(i):
             visited[i] = 1
-            for j in range(r):
-                if not visited[j] and M[i][j]:
+            for j in range(n):
+                if not visited[j] and isConnected[i][j]:
                     dfs(j)
+        
         count = 0
-        # Only need to iterate through each row if the student
-        # is not yet visited
-        for i in range(r):
+        for i in range(n):
             if not visited[i]:
-                count += 1
                 dfs(i)
-                    
+                count += 1
         return count
