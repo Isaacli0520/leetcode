@@ -19,15 +19,19 @@ class Solution:
     #     return result if result != len(nums) + 1 else 0
         
     
-    def minSubArrayLen(self, s: int, nums: List[int]) -> int:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        n = len(nums)
         tot = 0
+        result = n + 1
         left = 0
-        result = len(nums) + 1
-        for right, x in enumerate(nums):
-            tot += x
-            while tot >= s:
+        # Move right pointer, find minimal length of contiguous subarr
+        # with every right pointer
+        for right, y in enumerate(nums):
+            tot += y
+            # Current tot is too big, move left pointer
+            while target <= tot:
                 result = min(result, right - left + 1)
                 tot -= nums[left]
                 left += 1
-        return result if result != len(nums) + 1 else 0
+        return result if result != n + 1 else 0
         
