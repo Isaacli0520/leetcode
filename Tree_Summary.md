@@ -15,7 +15,9 @@ def Preorder(root):
 ```
  ### **Inorder** 
 
-[94. Binary Tree Inorder Traversal](code/0094_binary_tree_inorder_traversal.py)
+- [94. Binary Tree Inorder Traversal](code/0094_binary_tree_inorder_traversal.py)
+- [98. Validate Binary Search Tree](0098_validate_binary_search_tree.py)
+- [230. Kth Smallest Element in a BST](code/0230_kth_smallest_element_in_a_bst.py)
 
 ```python
 def Inorder(root):
