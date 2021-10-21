@@ -1,6 +1,6 @@
 # Tree Summary
-### Preorder, Inorder, Postorder Traversal Iteratively
-**Preorder**
+## Preorder, Inorder, Postorder Traversal Iteratively
+### **Preorder**
 ```python
 def Preorder(root):
     stack = [root]
@@ -13,7 +13,10 @@ def Preorder(root):
             stack.append(node.right)
     return res
 ```
-**Inorder**
+ ### **Inorder** 
+
+[94. Binary Tree Inorder Traversal](code/0094_binary_tree_inorder_traversal.py)
+
 ```python
 def Inorder(root):
     stack, res = [], []
@@ -27,7 +30,7 @@ def Inorder(root):
     return res
 ```
 
-**Postorder**
+### **Postorder**
 ```python
 def Postorder(root):
     stack = [root]
