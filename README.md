@@ -1,6 +1,16 @@
 # leetcode
 
-## Things I don't Know
+## Main
+1. Dynamic Programming
+    - [509. Fibonacci Number](code/0509_fibonacci_number.py)
+    - [322. Coin Change](code/0322_coin_change.py)
+    - [300. Longest Increasing Subsequence](code/0300_longest_increasing_subsequence.py)
+    - [354. Russian Doll Envelopes](code/0354_russian_doll_envelopes.py)
+    - [055. Jump Game](code/0055_jump_game.py)
+2. Greedy
+    - [045. Jump Game II](code/0045_jump_game2.py)
+
+## Misc
 
 ### Python map() function
 `map()` applies the function to all the items in the input iterable and returns an iterator
@@ -18,10 +28,5 @@
 >>> list(filter(lambda x:x % 2 == 0, [1, 2, 3, 4]))
 [2, 4]
 ```
-### Topological Sort
-DFS?
-
-### Retarded Problems
-29. Divide Two Integers
 
 

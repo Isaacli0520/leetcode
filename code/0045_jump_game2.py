@@ -1,4 +1,24 @@
 class Solution:
+    # Greedy
+    # For curr number of jumps, search among all the possible 
+    # positions we can get to for the farthest idx we can jump to.
+    # 
+    # Once we reach the end of the curr jump, we update the search range
+    # to the farthest idx we found and repeat
+    def jump(self, nums: List[int]) -> int:
+        jumps = 0
+        farthest = 0
+        curr_jump_end = 0
+        # Do not include the last index, becasue if last_index == curr_jump_end,
+        # jumps will be 1 more than what it's supposed to be
+        for i in range(len(nums) - 1):
+            farthest = max(farthest, i + nums[i])
+            if i == curr_jump_end:
+                jumps += 1
+                curr_jump_end = farthest
+                
+        return jumps
+        
     # BFS
     # [2, 3, 1, 1, 4]
     # 1 step:
@@ -20,17 +40,3 @@ class Solution:
             start, end = end + 1, maxend
         return step
     
-    # Greedy
-    def jump(self, nums):
-        steps = 0
-        curr_jmp_max, prev_jmp_max = 0, 0
-        for i in range(len(nums) - 1):
-            curr_jmp_max = max(curr_jmp_max, i + nums[i])
-            # if we reaches the previous maximum point we can get to
-            # it means that we have to increase step by 1 to reach
-            # further points
-            if i == prev_jmp_max:
-                steps += 1
-                prev_jmp_max = curr_jmp_max
-        return steps
-  

@@ -1,20 +1,20 @@
 class Solution:
     # Going forward
     def canJump(self, nums: List[int]) -> bool:
-        # Maximum distance we can go
-        m = 0
+        max_pos = 0
         for i, n in enumerate(nums):
-            if i > m:
+            if i > max_pos:
                 return False
-            m = max(m, i + n)
+            max_pos = max(max_pos, i + nums[i])
         return True
-    
-    # Going backwards
-    def canJump(self, nums):
-        goal = len(nums) - 1
+                
+    # Going Backward
+    def canJump(self, nums: List[int]) -> bool:
+        target = len(nums) - 1
+        # If we can get to our target from i,
+        # our new target is i
         for i in range(len(nums) - 2, -1, -1):
-            # If we can get to goal from i,
-            # out new goal is set to i
-            if i + nums[i] >= goal:
-                goal = i
-        return goal == 0
+            if i + nums[i] >= target:
+                target = i
+        return target == 0
+        
