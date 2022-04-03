@@ -7,8 +7,13 @@
     - [300. Longest Increasing Subsequence](code/0300_longest_increasing_subsequence.py)
     - [354. Russian Doll Envelopes](code/0354_russian_doll_envelopes.py)
     - [055. Jump Game](code/0055_jump_game.py)
+    - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
+    - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
 2. Greedy
     - [045. Jump Game II](code/0045_jump_game2.py)
+
+## To-do
+- 0010 regular expression matching
 
 ## Misc
 
