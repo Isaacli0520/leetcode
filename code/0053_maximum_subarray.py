@@ -1,5 +1,15 @@
 class Solution:
     # DP
+    # dp[i] = max sum until i
+    def maxSubArray(self, nums: List[int]) -> int:
+        curr_max = nums[0]
+        real_max = nums[0]
+        for i in range(1, len(nums)):
+            curr_max = max(curr_max + nums[i], nums[i])
+            real_max = max(real_max, curr_max)
+        return real_max
+
+    # Kadane's Algo
     def maxSubArray(self, nums: List[int]) -> int:
         for i in range(1, len(nums)):
             # If previous sum is negative, max sum so far should just be nums[i]
