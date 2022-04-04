@@ -6,6 +6,12 @@
     - [023. Merge k Sorted Lists](code/0023_merge_k_sorted_lists.py)
     - [019. Remove Nth Node From End of List](code/0019_remove_nth_node_from_end_of_list.py)
     - [876. Middle of the Linked List](code/0876_middle_of_the_linked_list.py)
+    - [141. Linked List Cycle](code/0141_linked_list_cycle.py)
+    - [142. Linked List Cycle II](code/0142_linked_list_cycle2.py)
+    - [160. Intersection of Two Linked Lists](code/0160_intersection_of_two_linked_lists.py)
+    - [206. Reverse Linked List](code/0206_reverse_linked_list.py)
+    - [092. Reverse Linked List II](code/0092_reverse_linked_list2.py)
+    - [234. Palindrome Linked List](code/0234_palindrome_linked_list.py)
 2. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
