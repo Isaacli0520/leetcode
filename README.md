@@ -12,7 +12,11 @@
     - [206. Reverse Linked List](code/0206_reverse_linked_list.py)
     - [092. Reverse Linked List II](code/0092_reverse_linked_list2.py)
     - [234. Palindrome Linked List](code/0234_palindrome_linked_list.py)
-2. Dynamic Programming
+2. Array
+    - [303. Range Sum Query](code/0303_range_sum_query.py)
+    - [304. Range Sum Query 2D](code/0304_range_sum_query_2d.py)
+    - [560. Subarray Sum Equals K](code/0560_subarray_sum_equals_k.py)
+3. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
     - [322. Coin Change](code/0322_coin_change.py)
@@ -21,7 +25,7 @@
     - [055. Jump Game](code/0055_jump_game.py)
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
-3. Greedy
+4. Greedy
     - [045. Jump Game II](code/0045_jump_game2.py)
 
 ## To-do
