@@ -30,7 +30,7 @@
         - [0048. Rotate Image](code/0048_rotate_image.py)
         - [0054. Spiral Matrix](code/0054_spiral_matrix.py)
         - [0059. Spiral Matrix II](code/0059_spiral_matrix2.py)
-3. Binary Search
+3. [Binary Search](#binary-search)
     - [704. Binary Search](code/0704_binary_search.py)
     - [034. Find First and Last Position of Element in Sorted Array](code/0034_find_first_and_last_position_of_element_in_sorted_array.py)
     - [528. Random Pick with Weight](code/0528_random_pick_with_weight.py)
@@ -56,6 +56,59 @@
 - 0010 regular expression matching
 
 # Basic Code
+
+## Binary Search
+### Base
+```python
+def binary_search(nums, target):
+    left, right = 0, len(nums)
+    while left < right:
+        mid = left + (right - left) // 2
+        num = nums[mid]
+        if target == num:
+            return mid
+        elif target < num:
+            right = mid
+        elif target > num:
+            left = mid + 1
+    return -1 
+```
+### Left Bound
+```python
+def binary_search(nums, target):
+    left, right = 0, len(nums)
+    while left < right:
+        mid = left + (right - left) // 2
+        num = nums[mid]
+        # Diff
+        if target == num:
+            right = mid
+        elif target < num:
+            right = mid
+        elif target > num:
+            left = mid + 1
+    # Diff
+    return left if left < len(nums) and nums[left] == target else -1
+```
+### Right Bound
+```python
+def binary_search(nums, target):
+    left, right = 0, len(nums)
+    while left < right:
+        mid = left + (right - left) // 2
+        num = nums[mid]
+        # Diff
+        if target == num:
+            left = mid + 1
+        elif target < num:
+            right = mid
+        elif target > num:
+            left = mid + 1
+    # Since when nums[mid] == target,
+    # left = mid + 1, nums[left] never
+    # equals target.
+    return left - 1 if left > 0 and nums[left - 1] == target else -1
+```
 ## Sliding Window
 ```python
 def sliding_window(s):
