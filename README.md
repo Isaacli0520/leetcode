@@ -30,7 +30,11 @@
         - [0048. Rotate Image](code/0048_rotate_image.py)
         - [0054. Spiral Matrix](code/0054_spiral_matrix.py)
         - [0059. Spiral Matrix II](code/0059_spiral_matrix2.py)
-3. Dynamic Programming
+3. Binary Search
+    - [704. Binary Search](code/0704_binary_search.py)
+    - [034. Find First and Last Position of Element in Sorted Array](code/0034_find_first_and_last_position_of_element_in_sorted_array.py)
+    - [528. Random Pick with Weight](code/0528_random_pick_with_weight.py)
+4. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
     - [322. Coin Change](code/0322_coin_change.py)
@@ -39,9 +43,9 @@
     - [055. Jump Game](code/0055_jump_game.py)
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
-4. Greedy
+5. Greedy
     - [045. Jump Game II](code/0045_jump_game2.py)
-5. Misc
+6. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
         - [567. Permutation in String](code/0567_permutaion_in_string.py)

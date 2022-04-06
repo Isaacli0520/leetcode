@@ -1,40 +1,31 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        n = len(nums)
-        left, right = 0, n - 1
-        res = [-1, -1]
-        
-        # Find Right
-        # Key diff from normal binary search:
-        #   When nums[mid] == target, shrink left bound
-        while left <= right:
-            mid = int(left + (right - left) / 2)
-            if nums[mid] <= target:
+        # Left Bound
+        left, right = 0, len(nums)
+        while left < right:
+            mid = left + (right - left) // 2
+            num = nums[mid]
+            # Shrink Left
+            if target == num:
+                right = mid
+            elif target < num:
+                right = mid
+            elif target > num:
                 left = mid + 1
-            elif nums[mid] > target:
-                right = mid - 1
+        lb = left if left != len(nums) and nums[left] == target else -1
         
-         # Target is less than every element, right = -1
-        if right < 0 or nums[right] != target:
-            res[1] = -1
-        else:
-            res[1] = right
-        
-        # Find Left
-        # Key diff from normal binary search:
-        #   When nums[mid] == target, shrink right bound
-        left, right = 0, n - 1
-        while left <= right:
-            mid = int(left + (right - left) / 2)
-            if nums[mid] < target:
+        # Right Bound
+        left, right = 0, len(nums)
+        while left < right:
+            mid = left + (right - left) // 2
+            num = nums[mid]
+            # Shrink Right
+            if target == num:
                 left = mid + 1
-            elif nums[mid] >= target:
-                right = mid - 1
-            
-        # Target is bigger than every element, left = -1
-        if left >= n or nums[left] != target:
-            res[0] = -1
-        else:
-            res[0] = left
-            
-        return res
+            elif target < num:
+                right = mid
+            elif target > num:
+                left = mid + 1
+        rb = left - 1 if left > 0 and nums[left - 1] == target else -1
+        
+        return [lb, rb]
