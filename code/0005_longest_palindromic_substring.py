@@ -1,4 +1,21 @@
 class Solution:
+    # Two Pointers? 
+    # For every i
+    # search for palindrom with s[i] as mid
+    # search for palindrom with s[i], s[i + 1] as mid
+    def longestPalindrome(self, s: str) -> str:
+        res = s[0]
+        for i in range(len(s)):
+            res = max(res, self.helper(s, i - 1, i + 1), self.helper(s, i, i + 1), key=len)
+        return res
+
+    def helper(self, s, left, right):
+        while left >= 0 and right <= len(s) - 1 and s[left] == s[right]:
+            left -= 1
+            right += 1
+        return s[left + 1:right]
+
+
     # Dynamic Programming
     def longestPalindrome(self, s: str) -> str:
         l = len(s)
@@ -18,35 +35,6 @@ class Solution:
                     if j - i + 1 > max_len:
                         max_len = j - i + 1
                         max_start = i
-        return s[max_start:max_start + max_len]
-    
-    # Faster than dp
-    def longestPalindrome(self, s: str) -> str:
-        max_len, max_start = 0, 0
-        mid = 0
-        l = len(s)
-        while mid < l:
-            # start from mid
-            left, right = mid, mid
-            
-            # skip duplicates and count for even length palindromes
-            while right < l - 1 and s[right + 1] == s[right]:
-                right = right + 1
-                
-            # mid move to next position
-            # skip duplicates automatically
-            mid = right + 1
-            
-            # Find longest palindrome given current mid
-            while left > 0 and right < l - 1 and s[left - 1] == s[right + 1]:
-                left -= 1
-                right += 1
-            
-            # Record longest palindrom length and start for return
-            if right - left + 1 > max_len:
-                max_len = right - left + 1
-                max_start = left
-        
         return s[max_start:max_start + max_len]
             
         

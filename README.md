@@ -12,8 +12,13 @@
     - [092. Reverse Linked List II](code/0092_reverse_linked_list2.py)
     - [234. Palindrome Linked List](code/0234_palindrome_linked_list.py)
 2. Array
+    - Misc
+        - [001. Two Sum](code/0001_two_sum.py)
     - Double Pointers
         - [026. Remove Duplicates from Sorted Array](code/0026_remove_duplicates_from_sorted_array.py)
+        - [167. Two Sum II - Input Array Is Sorted](code/0167_two_sum_2_sorted_array.py)
+        - [344. Reverse String](code/0344_reverse_string.py)
+        - [005. Longest Palindromic Substring](code/0005_longest_palindromic_substring.py)
     - Prefix Sum Array
         - [303. Range Sum Query](code/0303_range_sum_query.py)
         - [304. Range Sum Query 2D](code/0304_range_sum_query_2d.py)
@@ -21,6 +26,10 @@
     - Difference Array
         - [1094. Car Pooling](code/1094_car_pooling.py)
         - [1109. Corporate Flight Booking](code/1109_corporate_flight_bookings.py)
+    - 2D Array Traversal
+        - [0048. Rotate Image](code/0048_rotate_image.py)
+        - [0054. Spiral Matrix](code/0054_spiral_matrix.py)
+        - [0059. Spiral Matrix II](code/0059_spiral_matrix2.py)
 3. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
