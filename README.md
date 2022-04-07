@@ -14,6 +14,8 @@
 2. Array
     - Misc
         - [001. Two Sum](code/0001_two_sum.py)
+        - [380. Insert Delete GetRandom O(1)](code/0380_insert_delete_getrandom_o1.py)
+        - [710. Random Pick with Blacklist](code/0710_random_pick_with_blacklist.py)
     - Double Pointers
         - [026. Remove Duplicates from Sorted Array](code/0026_remove_duplicates_from_sorted_array.py)
         - [167. Two Sum II - Input Array Is Sorted](code/0167_two_sum_2_sorted_array.py)
@@ -52,6 +54,8 @@
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
 5. Greedy
     - [045. Jump Game II](code/0045_jump_game2.py)
+    - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
+    - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
 6. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
