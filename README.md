@@ -31,9 +31,16 @@
         - [0054. Spiral Matrix](code/0054_spiral_matrix.py)
         - [0059. Spiral Matrix II](code/0059_spiral_matrix2.py)
 3. [Binary Search](#binary-search)
-    - [704. Binary Search](code/0704_binary_search.py)
-    - [034. Find First and Last Position of Element in Sorted Array](code/0034_find_first_and_last_position_of_element_in_sorted_array.py)
-    - [528. Random Pick with Weight](code/0528_random_pick_with_weight.py)
+    - Basic
+        - [704. Binary Search](code/0704_binary_search.py)
+        - [034. Find First and Last Position of Element in Sorted Array](code/0034_find_first_and_last_position_of_element_in_sorted_array.py)
+    - Applications
+        - [528. Random Pick with Weight](code/0528_random_pick_with_weight.py)
+        - [410. Split Array Largest Sum](code/0410_split_array_largest_sum.py)
+        - [875. KoKo Eating Bananas](code/0875_koko_eating_bananas.py)
+        - [1011. Capacity To Ship Packages Within D Days](code/1011_capacity_to_ship_packages_within_d_days.py)
+        - [1283. Find the Smallest Divisor Given a Threshold](code/1283_find_the_smallest_divisor_given_a_threshold.py)
+        - [1482. Minimum Number of Days to Make m Bouquets](code/1482_minimum_number_of_days_to_make_m_bouquets.py)
 4. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
