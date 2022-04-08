@@ -10,6 +10,7 @@
     - [160. Intersection of Two Linked Lists](code/0160_intersection_of_two_linked_lists.py)
     - [206. Reverse Linked List](code/0206_reverse_linked_list.py)
     - [092. Reverse Linked List II](code/0092_reverse_linked_list2.py)
+    - [025. Reverse Nodes in k-Group](code/0025_reverse_nodes_in_k_group.py)
     - [234. Palindrome Linked List](code/0234_palindrome_linked_list.py)
 2. Array
     - Misc
@@ -46,9 +47,14 @@
 4. Binary Tree
     - [144. Binary Tree Preorder Traversal](code/0144_binary_tree_preorder_traversal.py)
     - [104. Maximum Depth of Binary Tree](code/0104_maximum_depth_of_binary_tree.py)
+    - [654. Maximum Binary Tree](code/0654_maximum_binary_tree.py)
     - [543. Diameter of Binary Tree](code/0543_diameter_of_binary_tree.py)
     - [226. Invert Binary Tree](code/0226_invert_binary_tree.py)
     - [116. Populating Next Right Pointers in Each Node](code/0116_populating_next_right_pointers_in_each_node.py)
+    - [114. Flatten Binary Tree to Linked List](code/0114_flatten_binary_tree_to_linked_list.py)
+    - [105. Construct Binary Tree from Preorder and Inorder Traversal](code/0105_construct_binary_tree_from_preorder_and_inorder_traversal.py)
+    - [106. Construct Binary Tree from Inorder and Postorder Traversal](code/0106_construct_binary_tree_from_inorder_and_preorder_traversal.py)
+    - [889. Construct Binary Tree from Preorder and Postorder Traversal](code/0889_construct_binary_tree_from_preorder_and_postorder_traversal.py)
 5. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
@@ -68,6 +74,8 @@
         - [567. Permutation in String](code/0567_permutaion_in_string.py)
         - [438. Find All Anagrams in a String](code/0438_find_all_anagrams_in_a_string.py)
         - [003. Longest Substring Without Repeating Characters](code/0003_longest_substring_without_repeating_characters.py)
+    - Heap
+        - [703. Kth Largest Element in a Stream](code/0703_kth_largest_element_in_a_stream.py)
 
 # To-do
 - 0010 regular expression matching

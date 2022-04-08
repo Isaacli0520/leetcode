@@ -5,26 +5,27 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    # Recursive
-    def __init__(self):
-        self.prev = None
-        
-    def flatten(self, root: TreeNode) -> None:
+    # Recursion
+    def flatten(self, root: Optional[TreeNode]) -> None:
         """
         Do not return anything, modify root in-place instead.
         """
         if not root:
-            return None
-        
-        self.flatten(root.right)
+            return
         self.flatten(root.left)
+        self.flatten(root.right)
         
-        # self.prev should be the root of left subtree
-        # connect root of left subtree to root->right
+        # if root.left is None, this subtree is already flattened
+        if root.left:
+            # connect rightmost node of root.left to root.right
+            curr = root.left
+            while curr.right:
+                curr = curr.right
+            curr.right = root.right
+            
+            root.right = root.left
+            root.left = None
         
-        root.right = self.prev
-        root.left = None
-        self.prev = root
 
     # Iterative O(n)
     def flatten(self, root: TreeNode) -> None:

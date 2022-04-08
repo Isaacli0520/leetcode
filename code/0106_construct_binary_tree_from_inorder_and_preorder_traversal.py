@@ -5,11 +5,20 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def buildTree(self, inorder: List[int], postorder: List[int]) -> TreeNode:
+    #   inorder = [9],  [3],   [15,   20,   7]
+    #            left |  root  |    right
+    # postorder = [9]   [15,   7,   20],   [3]
+    #            left |     right   |  root 
+    def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
         if not inorder:
             return None
-        root = postorder.pop()
-        idx = inorder.index(root)
-        right = self.buildTree(inorder[idx + 1:], postorder)
-        left = self.buildTree(inorder[:idx], postorder)
-        return TreeNode(root, left, right)
+        if len(inorder) == 1:
+            return TreeNode(inorder[0])
+        
+        val = postorder[-1]
+        idx = inorder.index(val)
+        
+        root = TreeNode(val)
+        root.left = self.buildTree(inorder[:idx], postorder[:idx])
+        root.right = self.buildTree(inorder[idx + 1:], postorder[idx:-1])
+        return root
