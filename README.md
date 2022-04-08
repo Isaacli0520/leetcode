@@ -43,7 +43,13 @@
         - [1011. Capacity To Ship Packages Within D Days](code/1011_capacity_to_ship_packages_within_d_days.py)
         - [1283. Find the Smallest Divisor Given a Threshold](code/1283_find_the_smallest_divisor_given_a_threshold.py)
         - [1482. Minimum Number of Days to Make m Bouquets](code/1482_minimum_number_of_days_to_make_m_bouquets.py)
-4. Dynamic Programming
+4. Binary Tree
+    - [144. Binary Tree Preorder Traversal](code/0144_binary_tree_preorder_traversal.py)
+    - [104. Maximum Depth of Binary Tree](code/0104_maximum_depth_of_binary_tree.py)
+    - [543. Diameter of Binary Tree](code/0543_diameter_of_binary_tree.py)
+    - [226. Invert Binary Tree](code/0226_invert_binary_tree.py)
+    - [116. Populating Next Right Pointers in Each Node](code/0116_populating_next_right_pointers_in_each_node.py)
+5. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
     - [322. Coin Change](code/0322_coin_change.py)
@@ -52,11 +58,11 @@
     - [055. Jump Game](code/0055_jump_game.py)
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
-5. Greedy
+6. Greedy
     - [045. Jump Game II](code/0045_jump_game2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
-6. Misc
+7. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
         - [567. Permutation in String](code/0567_permutaion_in_string.py)

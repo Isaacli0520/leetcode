@@ -29,17 +29,12 @@ class Solution:
         return ret
     
     # Recursive
-    def connect(self, root: 'Node') -> 'Node':
-        if not root:
-            return None
-        if not root.left and not root.right:
-            if not root.next:
-                root.next = None
-                return root
-            else:
-                return
+    def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
+        if not root or not root.left or not root.right:
+            return root
         root.left.next = root.right
-        root.right.next = root.next.left if root.next else None
+        if root.next:
+            root.right.next = root.next.left
         self.connect(root.left)
         self.connect(root.right)
         return root
