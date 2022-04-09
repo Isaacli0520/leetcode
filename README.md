@@ -84,6 +84,8 @@
         - [327. Count of Range Sum](code/0327_count_of_range_sum.py)
     - Quick Sort
         - [215. Kth Largest Element in an Array](code/0215_kth_largest_element_in_an_array.py)
+    - Bucket Sort
+        - [347. Top K Frequent Elements](code/0347_top_k_frequent_elements.py)
 
 # To-do
 - 0010 regular expression matching
