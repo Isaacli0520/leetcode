@@ -78,8 +78,12 @@
         - [003. Longest Substring Without Repeating Characters](code/0003_longest_substring_without_repeating_characters.py)
     - Heap
         - [703. Kth Largest Element in a Stream](code/0703_kth_largest_element_in_a_stream.py)
-    - Misc Misc
+    - Merge Sort
         - [912. Sort an Array](code/0912_sort_an_array.py)
+        - [315. Count of Smaller Numbers After Self](code/0315_count_of_smaller_numbers_after_self.py)
+        - [327. Count of Range Sum](code/0327_count_of_range_sum.py)
+    - Quick Sort
+        - [215. Kth Largest Element in an Array](code/0215_kth_largest_element_in_an_array.py)
 
 # To-do
 - 0010 regular expression matching
