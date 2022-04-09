@@ -4,46 +4,44 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
 class Codec:
 
-    # Preorder Traversal
     def serialize(self, root):
         """Encodes a tree to a single string.
         
         :type root: TreeNode
         :rtype: str
         """
-        res = []
-        def helper(node):
+        def helper(node, res):
             if not node:
                 res.append("#")
                 return
             res.append(str(node.val))
-            helper(node.left)
-            helper(node.right)
-        helper(root)
-        return " ".join(res)
-        
-    # Preorder Traversal
+            helper(node.left, res)
+            helper(node.right, res)
+        tmp = []
+        helper(root, tmp)
+        return ",".join(tmp)
+
     def deserialize(self, data):
         """Decodes your encoded data to tree.
         
         :type data: str
         :rtype: TreeNode
         """
-        vals = iter(data.split(' '))
-        def helper():
-            val = next(vals)
+        data = iter(data.split(","))
+        def helper2(ls):
+            val = next(data)
             if val == "#":
                 return None
             node = TreeNode(val)
-            node.left = helper()
-            node.right = helper()
+            node.left = helper2(ls)
+            node.right = helper2(ls)
             return node
-        return helper()
+        return helper2(data)
             
 
 # Your Codec object will be instantiated and called as such:
-# codec = Codec()
-# codec.deserialize(codec.serialize(root))
+# ser = Codec()
+# deser = Codec()
+# ans = deser.deserialize(ser.serialize(root))

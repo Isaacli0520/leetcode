@@ -55,6 +55,8 @@
     - [105. Construct Binary Tree from Preorder and Inorder Traversal](code/0105_construct_binary_tree_from_preorder_and_inorder_traversal.py)
     - [106. Construct Binary Tree from Inorder and Postorder Traversal](code/0106_construct_binary_tree_from_inorder_and_preorder_traversal.py)
     - [889. Construct Binary Tree from Preorder and Postorder Traversal](code/0889_construct_binary_tree_from_preorder_and_postorder_traversal.py)
+    - [297. Serialize and Deserialize Binary Tree](code/0297_serialize_and_deserialize_binary_tree.py)
+    - [652. Find Duplicate Subtrees](code/0652_find_duplicate_subtrees.py)
 5. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
@@ -76,6 +78,8 @@
         - [003. Longest Substring Without Repeating Characters](code/0003_longest_substring_without_repeating_characters.py)
     - Heap
         - [703. Kth Largest Element in a Stream](code/0703_kth_largest_element_in_a_stream.py)
+    - Misc Misc
+        - [912. Sort an Array](code/0912_sort_an_array.py)
 
 # To-do
 - 0010 regular expression matching
