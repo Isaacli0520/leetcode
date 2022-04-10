@@ -5,25 +5,31 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def isValidBST(self, root: TreeNode) -> bool:
+    # Iterative
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        curr = root
         stack = []
-        pre = None
-        # inorder traversal
-        while root or stack:
-            while root:
-                stack.append(root)
-                root = root.left
-            root = stack.pop()
-            if pre and root.val <= pre.val :
+        prev = None
+        while curr or stack:
+            while curr:
+                stack.append(curr)
+                curr = curr.left
+            curr = stack.pop()
+            if prev and curr.val <= prev.val:
                 return False
-            pre = root
-            root = root.right
+            prev = curr
+            curr = curr.right
         return True
-    
-    def isValidBST(self, root: TreeNode) -> bool:
-        def helper(root, mini, maxi):
-            if not root:
+        
+    # Recursive
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        def helper(node, mini, maxi):
+            if not node:
                 return True
-            # check root & left & right
-            return (not mini or root.val > mini.val) and (not maxi or root.val < maxi.val) and helper(root.left, mini, root) and helper(root.right, root, maxi)
+            if mini and node.val <= mini.val:
+                return False
+            if maxi and node.val >= maxi.val:
+                return False
+            return helper(node.left, mini, node) and helper(node.right, node, maxi)
+        
         return helper(root, None, None)

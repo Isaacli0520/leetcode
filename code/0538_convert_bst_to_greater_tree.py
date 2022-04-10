@@ -5,30 +5,31 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    # Iterative
+    def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        tot = 0
+        curr = root
+        stack = []
+        while curr or stack:
+            while curr:
+                stack.append(curr)
+                curr = curr.right
+            curr = stack.pop()
+            tot += curr.val
+            curr.val = tot
+            curr = curr.left
+        return root
+        
     # Recursive
-    def __init__(self):
-        self.so_far = 0
-    
-    def convertBST(self, root: TreeNode) -> TreeNode:
-        if not root:
-            return None
-        self.convertBST(root.right)
-        root.val += self.so_far
-        self.so_far = root.val
-        self.convertBST(root.left)
+    def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        self.tot = 0
+        self.helper(root)
         return root
     
-    # DFS
-    def convertBST(self, root: TreeNode) -> TreeNode:
-        stack = []
-        so_far = 0
-        ret = root
-        while root or stack:
-            while root:
-                stack.append(root)
-                root = root.right
-            root = stack.pop()
-            root.val += so_far
-            so_far = root.val
-            root = root.left
-        return ret
+    def helper(self, node):
+        if not node:
+            return
+        self.helper(node.right)
+        self.tot += node.val
+        node.val = self.tot
+        self.helper(node.left)
