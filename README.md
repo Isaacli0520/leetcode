@@ -72,6 +72,8 @@
 
 6. Graph
     - [797. All Paths From Source to Target](code/0797_all_paths_from_source_to_target.py)
+    - [207. Course Schedule](code/0207_course_schedule.py)
+    - [210. Course Schedule II](code/0210_course_schedule2.py)
 
 7. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
