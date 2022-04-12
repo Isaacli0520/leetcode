@@ -74,6 +74,13 @@
     - [797. All Paths From Source to Target](code/0797_all_paths_from_source_to_target.py)
     - [207. Course Schedule](code/0207_course_schedule.py)
     - [210. Course Schedule II](code/0210_course_schedule2.py)
+    - Bipartite Graph
+        - [785. Is Graph Bipartite?](code/0785_is_graph_bipartite.py)
+        - [886. Possible Bipartition](code/0886_possible_bipartition.py)
+    - [Union Find](#union-find)
+        - [990. Satisfiability of Equality Equations](code/0990_satisfiability_of_equality_equations.py)
+        - [684. Redundant Connection](code/0684_redundant_connection.py)
+        
 
 7. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
@@ -164,6 +171,35 @@ def binary_search(nums, target):
     # equals target.
     return left - 1 if left > 0 and nums[left - 1] == target else -1
 ```
+
+## Union Find
+### Time Complexity
+* Find: O(1)
+* Check if two nodes are connected: O(1)
+
+### Basic Code
+```python
+# Initialization, every node is connected to itself
+uf = {i:i for i in range(n)}
+
+# Find with path compression to ensure O(1) time complexity
+def find(x):
+    if x != uf[x]:
+        uf[x] = find(uf[x])
+    return uf[x]
+
+# Iterative
+def find(x):
+    while x != uf[x]:
+        uf[x] = uf[uf[x]]
+        x = uf[x]
+    return uf[x]
+
+# Check if two nodes are connected
+def connected(a, b):
+    return find(a) == find(b)
+```
+
 ## Sliding Window
 ```python
 def sliding_window(s):
