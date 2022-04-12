@@ -38,6 +38,7 @@
         - [704. Binary Search](code/0704_binary_search.py)
         - [034. Find First and Last Position of Element in Sorted Array](code/0034_find_first_and_last_position_of_element_in_sorted_array.py)
     - Applications
+        - [162. Find Peak Element](code/0162_find_peak_element.py)
         - [528. Random Pick with Weight](code/0528_random_pick_with_weight.py)
         - [410. Split Array Largest Sum](code/0410_split_array_largest_sum.py)
         - [875. KoKo Eating Bananas](code/0875_koko_eating_bananas.py)
@@ -57,6 +58,8 @@
     - [889. Construct Binary Tree from Preorder and Postorder Traversal](code/0889_construct_binary_tree_from_preorder_and_postorder_traversal.py)
     - [297. Serialize and Deserialize Binary Tree](code/0297_serialize_and_deserialize_binary_tree.py)
     - [652. Find Duplicate Subtrees](code/0652_find_duplicate_subtrees.py)
+    - [236. Lowest Common Ancestor of a Binary Tree](code/0236_lowest_common_ancestor_of_binary_tree.py)
+    - [222. Count Complete Tree Nodes](code/0222_count_complete_tree_nodes.py)
 5. Binary Search Tree
     - [230. Kth Smallest Element in a BST](code/0230_kth_smallest_element_in_a_bst.py)
     - [538. Convert BST to Greater Tree](code/0538_convert_bst_to_greater_tree.py)
@@ -66,8 +69,11 @@
     - [096. Unique Binary Search Trees](code/0096_unique_binary_search_trees.py)
     - [095. Unique Binary Search Trees II](code/0095_unique_binary_search_trees2.py)
     - [1373. Maximum Sum BST in Binary Tree](code/1373_maximum_sum_bst_in_binary_tree.py)
-    
-6. Dynamic Programming
+
+6. Graph
+    - [797. All Paths From Source to Target](code/0797_all_paths_from_source_to_target.py)
+
+7. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
     - [322. Coin Change](code/0322_coin_change.py)
@@ -76,11 +82,11 @@
     - [055. Jump Game](code/0055_jump_game.py)
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
-7. Greedy
+8. Greedy
     - [045. Jump Game II](code/0045_jump_game2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
-8. Misc
+9. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
         - [567. Permutation in String](code/0567_permutaion_in_string.py)

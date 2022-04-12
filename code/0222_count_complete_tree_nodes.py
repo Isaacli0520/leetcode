@@ -5,24 +5,19 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def countNodes(self, root: TreeNode) -> int:
+    def countNodes(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
-        left_d = self.getDepth(root.left)
-        right_d = self.getDepth(root.right)
-        if left_d == right_d:
-            return pow(2, left_d) + self.countNodes(root.right)
-        else:
-            return pow(2, right_d) + self.countNodes(root.left)
-    
-    def getDepth(self, root):
-        if not root:
-            return 0
-        return 1 + self.getDepth(root.left)
-    
-    # def countNodes(self, root: TreeNode) -> int:
-    #     if not root:
-    #         return 0
-    #     return 1 + self.countNodes(root.left) + self.countNodes(root.right)
         
-    
+        def get_height(node):
+            if not node:
+                return 0
+            return 1 + get_height(node.left)
+        
+        lh = get_height(root.left)
+        rh = get_height(root.right)
+        if lh == rh:
+            return self.countNodes(root.right) + pow(2, lh)
+        else:
+            return self.countNodes(root.left) + pow(2, rh)
+            

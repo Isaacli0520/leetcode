@@ -24,6 +24,31 @@ class Solution:
 
     # DFS
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        graph = [[] for i in range(numCourses)]
+        for c, prereq in prerequisites:
+            graph[prereq].append(c)
+        onPath = [False] * numCourses
+        visited = [False] * numCourses
+        hasCycle = False
+        def helper(curr):
+            nonlocal hasCycle
+            if onPath[curr]:
+                hasCycle = True
+                return
+            if visited[curr] or hasCycle:
+                return
+            visited[curr] = True
+            onPath[curr] = True
+            for course in graph[curr]:
+                helper(course)
+            onPath[curr] = False
+            
+        for i in range(numCourses):
+            helper(i)
+        return not hasCycle
+
+    # DFS
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         d = collections.defaultdict(list)
         for c, prereq in prerequisites:
             d[prereq].append(c)
