@@ -80,6 +80,10 @@
     - [Union Find](#union-find)
         - [990. Satisfiability of Equality Equations](code/0990_satisfiability_of_equality_equations.py)
         - [684. Redundant Connection](code/0684_redundant_connection.py)
+        - [399. Evaluate Division](code/0399_evaluate_division.py)
+        - [721. Accounts Merge](code/0721_accounts_merge.py)
+        - [128. Longest Consecutive Sequence](code/0128_longest_consecutive_sequence.py)
+        
         
 
 7. Dynamic Programming
