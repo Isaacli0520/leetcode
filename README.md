@@ -83,8 +83,12 @@
         - [399. Evaluate Division](code/0399_evaluate_division.py)
         - [721. Accounts Merge](code/0721_accounts_merge.py)
         - [128. Longest Consecutive Sequence](code/0128_longest_consecutive_sequence.py)
-        
-        
+    - [Kruskal's Algorithm](#kruskals-algorithm)
+        - [1584. Min Cost to Connect All Points](code/1584_min_cost_to_connect_all_points.py)
+
+7. Depth First Search
+    - [695. Max Area of Island](code/0695_max_area_of_island.py)
+    - [827. Making a Large Island](code/0827_making_a_large_island.py)
 
 7. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
@@ -218,10 +222,12 @@ def connect(a, b):
     else:
         uf[pa] = pb
         sizes[pb] += sizes[pa]
-
-
 ```
 
+## Kruskal's Algorithm
+1. Sort all the edges from low weight to high
+2. Take the edge with the lowest weight and add it to the spanning tree. If adding the edge created a cycle, then reject this edge. (Use [Union-Find](#union-find) to find if adding an edge creates a cycle)
+3. Keep adding edges until we reach all vertices.
 ## Sliding Window
 ```python
 def sliding_window(s):
