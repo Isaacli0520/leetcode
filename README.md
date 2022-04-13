@@ -202,6 +202,24 @@ def find(x):
 # Check if two nodes are connected
 def connected(a, b):
     return find(a) == find(b)
+
+# Connect two nodes without balancing
+def connect(a, b):
+    uf[find(a)] = find(b)
+
+# Connect two nodes with balancing (not necessary if path compression exists)
+# Maintain a sizes dict to record the size of each tree
+def connect(a, b):
+    pa, pb = find(a), find(b)
+    # Connect smaller tree to bigger tree
+    if sizes[pa] > sizes[pb]:
+        uf[pb] = pa
+        sizes[pa] += sizes[pb]
+    else:
+        uf[pa] = pb
+        sizes[pb] += sizes[pa]
+
+
 ```
 
 ## Sliding Window
