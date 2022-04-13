@@ -85,6 +85,12 @@
         - [128. Longest Consecutive Sequence](code/0128_longest_consecutive_sequence.py)
     - [Kruskal's Algorithm](#kruskals-algorithm)
         - [1584. Min Cost to Connect All Points](code/1584_min_cost_to_connect_all_points.py)
+    - Dijkstra's Algorithm
+        - [743. Network Delay Time](code/0743_network_delay_time.py)
+        - [1631. Path With Minimum Effort](code/1631_path_with_minimum_effort.py)
+        - [1514. Path With Maximum Probability](code/1514_path_with_maximum_probability.py)
+        - [787. Cheapest Flights Within K Stops](code/0787_cheapest_flights_within_k_stops.py)
+
 
 7. Depth First Search
     - [695. Max Area of Island](code/0695_max_area_of_island.py)
