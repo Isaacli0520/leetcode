@@ -234,6 +234,25 @@ def connect(a, b):
 1. Sort all the edges from low weight to high
 2. Take the edge with the lowest weight and add it to the spanning tree. If adding the edge created a cycle, then reject this edge. (Use [Union-Find](#union-find) to find if adding an edge creates a cycle)
 3. Keep adding edges until we reach all vertices.
+
+## Dijkstra's Algorithm
+Find the minimum distances from start to every node in a graph. The Graph must have **non-negative weights**.
+
+```python
+heap = [(0, start_node)]
+heapq.heapify(heap)
+dist = {}
+
+while heap:
+    cum_weight, curr = heapq.heappop(heap)
+    if curr not in dist:
+        dist[curr] = cum_weight
+        for weight, node in graph[curr]:
+            heapq.heappush(heap, (cum_weight + weight, node))
+
+return dist[target] if target in dist else -1
+```
+
 ## Sliding Window
 ```python
 def sliding_window(s):
