@@ -1,30 +1,29 @@
 class Solution:
-    # Recursive
-    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        res = []
-        if len(nums) == 0:
-            return [[]]
-        for n in set(nums):
-            tmp = list(nums)
-            tmp.remove(n)
-            for p in self.permuteUnique(tmp):
-                res.append([n] + p)
-        return res
-    
     # Backtracking
+    # The key is to not do backtrack on the same element in 
+    # current for loop.
+    #
+    # One way is to do "for x in set(ls)" instead of 
+    # "for x in ls" and find the index of the element to remove it.
+    # 
+    # Another way is to use a Counter, which is a lot smarter
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        res = []
         l = len(nums)
-        def dfs(ls, idx):
-            if idx == l - 1:
-                res.append(ls)
-            for n in set(ls[idx:]):
-                # Remove element from remaining 
-                # and put at current **only once**
-                remaining = list(ls[idx:])
-                remaining.remove(n)
-                dfs(ls[:idx] + [n] + remaining, idx + 1)
-        dfs(nums, 0)
+        res = []
+        cnt = Counter(nums)
+        
+        def helper(path):
+            if len(path) == l:
+                res.append(path[:])
+                return
+            for x in cnt:
+                if cnt[x] > 0:
+                    cnt[x] -= 1
+                    path.append(x)
+                    helper(path)
+                    path.pop()
+                    cnt[x] += 1
+        helper([])
         return res
 
     # Swap with sorted list

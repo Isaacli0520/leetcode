@@ -1,4 +1,17 @@
 class Solution:
+    # Classic Backtracking
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        res = []
+        def helper(ls, path):
+            if not ls:
+                res.append(path[:])
+            for i in range(len(ls)):
+                path.append(ls[i])
+                helper(ls[:i] + ls[i + 1:], path)
+                path.pop()
+        helper(nums, [])
+        return res
+
     # Dfs
     def permute(self, nums: List[int]) -> List[List[int]]:
         res = []

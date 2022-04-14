@@ -85,7 +85,7 @@
         - [128. Longest Consecutive Sequence](code/0128_longest_consecutive_sequence.py)
     - [Kruskal's Algorithm](#kruskals-algorithm)
         - [1584. Min Cost to Connect All Points](code/1584_min_cost_to_connect_all_points.py)
-    - Dijkstra's Algorithm
+    - [Dijkstra's Algorithm](#dijkstras-algorithm)
         - [743. Network Delay Time](code/0743_network_delay_time.py)
         - [1631. Path With Minimum Effort](code/1631_path_with_minimum_effort.py)
         - [1514. Path With Maximum Probability](code/1514_path_with_maximum_probability.py)
@@ -96,7 +96,13 @@
     - [695. Max Area of Island](code/0695_max_area_of_island.py)
     - [827. Making a Large Island](code/0827_making_a_large_island.py)
 
-7. Dynamic Programming
+8. Backtracking
+    - [046. Permutations](code/0046_permutations.py)
+    - [047. Permutations II](code/0047_permutations2.py)
+    - [051. N-Queens](code/0051_n_queens.py)
+    - [037. Sudoku Solver](code/0037_sudoku_solver.py)
+
+9. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
     - [322. Coin Change](code/0322_coin_change.py)
@@ -105,11 +111,12 @@
     - [055. Jump Game](code/0055_jump_game.py)
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
-8. Greedy
+10. Greedy
     - [045. Jump Game II](code/0045_jump_game2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
-9. Misc
+
+11. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
         - [567. Permutation in String](code/0567_permutaion_in_string.py)

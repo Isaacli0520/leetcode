@@ -3,31 +3,29 @@ class Solution:
         """
         Do not return anything, modify board in-place instead.
         """
-        self.nums = ['1','2','3','4','5','6','7','8','9']
+        self.nums = [str(i) for i in range(1, 10)]
         self.solve(board)
-        
-    def solve(self, board):
-        # Find next empty cell
-        r, c = -1, -1
-        for i in range(9):
-            for j in range(9):
+    
+    def findEmptyCell(self, board):
+        for i in range(len(board)):
+            for j in range(len(board[0])):
                 if board[i][j] == ".":
-                    r, c = i, j
-                    break
-                    
-        # If no empty cell, retruen true
+                    return i, j
+        return -1, -1
+    
+    def solve(self, board):
+        r, c = self.findEmptyCell(board)
+        
         if r == -1 and c == -1:
             return True
         
-        # Fill in with numbers
-        # Backtracking
         for num in self.nums:
             if self.isValid(board, r, c, num):
                 board[r][c] = num
                 if self.solve(board):
                     return True
                 board[r][c] = "."
-            
+        
     def isValid(self, board, r, c, ch):
         # Row
         for i in range(9):
@@ -45,4 +43,3 @@ class Solution:
                 if board[i][j] == ch:
                     return False
         return True
-                
