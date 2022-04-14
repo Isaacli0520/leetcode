@@ -97,10 +97,19 @@
     - [827. Making a Large Island](code/0827_making_a_large_island.py)
 
 8. Backtracking
+    - [017. Letter Combinations of a Phone Number](code/0017_letter_combinations_of_a_phone_number.py)
+    - [022. Generate Parentheses](code/0022_generate_parentheses.py)
+    - [039. Combination Sum](code/0040_combination_sum_2.py)
+    - [040. Combination Sum II](code/0039_combination_sum.py)
+    - [216. Combination Sum III](code/0216_combination_sum_3.py)
     - [046. Permutations](code/0046_permutations.py)
     - [047. Permutations II](code/0047_permutations2.py)
+    - [077. Combinations](code/0077_combinations.py)
+    - [078. Subsets](code/0078_subsets.py)
+    - [090. Subsets II](code/0090_subsets2.py)
     - [051. N-Queens](code/0051_n_queens.py)
     - [037. Sudoku Solver](code/0037_sudoku_solver.py)
+    - [079. Word Search](code/0079_word_search.py)
 
 9. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
@@ -112,7 +121,7 @@
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
 10. Greedy
-    - [045. Jump Game II](code/0045_jump_game2.py)
+    - [045. Jump Game II](code/0045_jump_game_2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
 

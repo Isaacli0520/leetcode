@@ -1,11 +1,18 @@
 class Solution:
     def combinationSum3(self, k: int, n: int) -> List[List[int]]:
         res = []
-        def helper(t, idx, track):
-            if len(track) == k and t == 0:
-                res.append(track)
+        
+        def helper(path, start, diff, cnt):
+            if diff == 0 and cnt == k:
+                res.append(path[:])
                 return
-            for i in range(idx, min(t + 1, 10)):
-                helper(t - i, i + 1, track + [i])
-        helper(n, 1, [])
+            if cnt >= k:
+                return
+            for i in range(start, 10):
+                if i <= diff:
+                    path.append(i)
+                    helper(path, i + 1, diff - i, cnt + 1)
+                    path.pop()
+                    
+        helper([], 1, n, 0)
         return res

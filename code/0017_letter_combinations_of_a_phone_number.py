@@ -1,6 +1,8 @@
 class Solution:
-    def __init__(self):
-        self.d = {
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits:
+            return []
+        d = {
             "2":"abc",
             "3":"def",
             "4":"ghi",
@@ -10,22 +12,15 @@ class Solution:
             "8":"tuv",
             "9":"wxyz"
         }
-    def letterCombinations(self, digits: str) -> List[str]:
         res = []
-        if digits == "":
-            return []
-        
-        # Backtracking
-        def helper(digits, track):
-            if digits == "":
-                res.append("".join(track))
+        def helper(i, path):
+            if i == len(digits):
+                res.append("".join(path))
                 return
-            for l in self.d[digits[0]]:
-                track.append(l)
-                helper(digits[1:], track)
-                track.pop()
-                
-        helper(digits, [])
-        return res
-            
+            for letter in d[digits[i]]:
+                path.append(letter)
+                helper(i + 1, path)
+                path.pop()
         
+        helper(0, [])
+        return res
