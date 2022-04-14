@@ -93,8 +93,12 @@
 
 
 7. Depth First Search
+    - [200. Number of Islands](code/0200_number_of_islands.py)
     - [695. Max Area of Island](code/0695_max_area_of_island.py)
     - [827. Making a Large Island](code/0827_making_a_large_island.py)
+    - [1254. Number of Closed Islands](code/1254_number_of_closed_islands.py)
+    - [1020. Number of Enclaves](code/1020_number_of_enclaves.py)
+    - [1905. Count Sub Islands](code/1905_count_sub_islands.py)
 
 8. Backtracking
     - [017. Letter Combinations of a Phone Number](code/0017_letter_combinations_of_a_phone_number.py)
