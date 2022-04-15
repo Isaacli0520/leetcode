@@ -90,9 +90,12 @@
         - [1631. Path With Minimum Effort](code/1631_path_with_minimum_effort.py)
         - [1514. Path With Maximum Probability](code/1514_path_with_maximum_probability.py)
         - [787. Cheapest Flights Within K Stops](code/0787_cheapest_flights_within_k_stops.py)
+7. Breadth First Search
+    - [111. Min Depth of Binary Tree](code/0111_min_depth_of_binary_tree.py)
+    - [752. Open the Lock](code/0752_open_the_lock.py)
+    - [773. Sliding Puzzle](code/0773_sliding_puzzle.py)
 
-
-7. Depth First Search
+8. Depth First Search
     - [200. Number of Islands](code/0200_number_of_islands.py)
     - [695. Max Area of Island](code/0695_max_area_of_island.py)
     - [827. Making a Large Island](code/0827_making_a_large_island.py)
@@ -100,7 +103,7 @@
     - [1020. Number of Enclaves](code/1020_number_of_enclaves.py)
     - [1905. Count Sub Islands](code/1905_count_sub_islands.py)
 
-8. Backtracking
+9. Backtracking
     - [017. Letter Combinations of a Phone Number](code/0017_letter_combinations_of_a_phone_number.py)
     - [022. Generate Parentheses](code/0022_generate_parentheses.py)
     - [039. Combination Sum](code/0040_combination_sum_2.py)
@@ -115,7 +118,7 @@
     - [037. Sudoku Solver](code/0037_sudoku_solver.py)
     - [079. Word Search](code/0079_word_search.py)
 
-9. Dynamic Programming
+10. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
     - [322. Coin Change](code/0322_coin_change.py)
@@ -124,12 +127,12 @@
     - [055. Jump Game](code/0055_jump_game.py)
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
-10. Greedy
+11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
 
-11. Misc
+12. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
         - [567. Permutation in String](code/0567_permutaion_in_string.py)
