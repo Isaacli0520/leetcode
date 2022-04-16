@@ -148,6 +148,8 @@
         - [215. Kth Largest Element in an Array](code/0215_kth_largest_element_in_an_array.py)
     - Bucket Sort
         - [347. Top K Frequent Elements](code/0347_top_k_frequent_elements.py)
+    - Divide and Conquer
+        - [241. Different Ways to Add Parentheses](code/0241_different_ways_to_add_parentheses.py)
     - Misc
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
 
