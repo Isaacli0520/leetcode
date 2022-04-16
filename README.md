@@ -127,6 +127,8 @@
     - [055. Jump Game](code/0055_jump_game.py)
     - [931. Minimum Falling Path Sum](code/0931_minimum_falling_path_sum.py)
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
+    - [494. Target Sum](code/0494_target_sum.py)
+    - [072. Edit Distance](code/0072_edit_distance.py)
 11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
