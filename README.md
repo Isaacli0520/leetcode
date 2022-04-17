@@ -129,6 +129,9 @@
     - [064. Minimum Path Sum](code/0064_minimum_path_sum.py)
     - [494. Target Sum](code/0494_target_sum.py)
     - [072. Edit Distance](code/0072_edit_distance.py)
+    - [583. Delete Operation for Two Strings](code/0583_delete_operation_for_two_strings.py)
+    - [1143. Longest Common Subsequence](code/1143_longest_common_subsequence.py)
+
 11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
