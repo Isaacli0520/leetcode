@@ -131,8 +131,10 @@
     - [072. Edit Distance](code/0072_edit_distance.py)
     - [583. Delete Operation for Two Strings](code/0583_delete_operation_for_twostrings.py)
     - [1143. Longest Common Subsequence](code/1143_longest_common_subsequence.py)
-    - [0516. Longest Palindromic Subsequence](code/0516_longest_palindromic_subsequence.py)
+    - [516. Longest Palindromic Subsequence](code/0516_longest_palindromic_subsequence.py)
     - [1312. Minimum Insertion Steps to Make a String Palindrome](code/1312_minimum_insertion_steps_to_make_a_string_palindrome.py)
+    - [416. Partition Equal Subset Sum](code/0416_partition_equal_subset_sum.py)
+    - [518. Coin Change 2](code/0518_coin_change_2.py)
 
 11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
