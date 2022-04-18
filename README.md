@@ -135,6 +135,9 @@
     - [1312. Minimum Insertion Steps to Make a String Palindrome](code/1312_minimum_insertion_steps_to_make_a_string_palindrome.py)
     - [416. Partition Equal Subset Sum](code/0416_partition_equal_subset_sum.py)
     - [518. Coin Change 2](code/0518_coin_change_2.py)
+    - [174. Dungeon Game](code/0174_dungeon_game.py)
+    - [097. Interleaving String](code/0097_interleaving_string.py)
+    - [368. Largest Divisible Subset](code/0368_largest_divisible_subset.py)
 
 11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
