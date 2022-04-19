@@ -138,6 +138,9 @@
     - [174. Dungeon Game](code/0174_dungeon_game.py)
     - [097. Interleaving String](code/0097_interleaving_string.py)
     - [368. Largest Divisible Subset](code/0368_largest_divisible_subset.py)
+    - [376. Wiggle Subsequence](code/0376_wiggle_subsequence.py)
+    - [377. Combination Sum IV](code/0377_combination_sum_4.py)
+
 
 11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
