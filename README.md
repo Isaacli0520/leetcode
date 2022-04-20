@@ -154,6 +154,12 @@
         - [567. Permutation in String](code/0567_permutaion_in_string.py)
         - [438. Find All Anagrams in a String](code/0438_find_all_anagrams_in_a_string.py)
         - [003. Longest Substring Without Repeating Characters](code/0003_longest_substring_without_repeating_characters.py)
+    - Intervals
+        - [0056. Merge Intervals](code/0056_merge_intervals.py)
+        - [1288. Remove Covered Intervals](code/1288_remove_covered_intervals.py)
+        - [986. Interval List Intersections](code/0986_interval_list_intersections.py)
+    - Hash Table
+        - [659. Split Array into Consecutive Subsequences](code/0659_split_array_into_consecutive_subsequences.py)
     - Heap
         - [703. Kth Largest Element in a Stream](code/0703_kth_largest_element_in_a_stream.py)
     - Merge Sort
