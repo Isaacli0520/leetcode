@@ -118,6 +118,7 @@
     - [051. N-Queens](code/0051_n_queens.py)
     - [037. Sudoku Solver](code/0037_sudoku_solver.py)
     - [079. Word Search](code/0079_word_search.py)
+    - [698. Partition to K Equal Sum Subsets](code/0698_partition_to_k_equal_sum_subsets.py)
 
 10. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
