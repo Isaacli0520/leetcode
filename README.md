@@ -27,6 +27,7 @@
         - [303. Range Sum Query](code/0303_range_sum_query.py)
         - [304. Range Sum Query 2D](code/0304_range_sum_query_2d.py)
         - [560. Subarray Sum Equals K](code/0560_subarray_sum_equals_k.py)
+        - [238. Product of Array Except Self](code/0238_product_of_array_except_self.py)
     - Difference Array
         - [1094. Car Pooling](code/1094_car_pooling.py)
         - [1109. Corporate Flight Booking](code/1109_corporate_flight_bookings.py)
@@ -173,8 +174,13 @@
         - [347. Top K Frequent Elements](code/0347_top_k_frequent_elements.py)
     - Divide and Conquer
         - [241. Different Ways to Add Parentheses](code/0241_different_ways_to_add_parentheses.py)
+    - Monotonic Stack
+        - [496. Next Greater Element I](code/0496_next_greater_element_1.py)
+        - [739. Daily Temperatures](code/0739_daily_temperatures.py)
+        - [503. Next Greater Element II](code/0503_next_greater_element_2.py)
     - Misc
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
+        - [146. LRU Cache](code/0146_lru_cache.py)
 
 # To-do
 - 0010 regular expression matching
