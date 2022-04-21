@@ -143,14 +143,17 @@
     - [368. Largest Divisible Subset](code/0368_largest_divisible_subset.py)
     - [376. Wiggle Subsequence](code/0376_wiggle_subsequence.py)
     - [377. Combination Sum IV](code/0377_combination_sum_4.py)
-
+    - [264. Ugly Number 2](code/0264_ugly_number_2.py)
 
 11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
 
-12. Misc
+12. Math
+    - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
+
+13. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
         - [567. Permutation in String](code/0567_permutaion_in_string.py)
