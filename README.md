@@ -124,6 +124,7 @@
 10. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
+    - [119. Pascal's Triangle II](code/0119_pascals_triangle_2.py)
     - [322. Coin Change](code/0322_coin_change.py)
     - [300. Longest Increasing Subsequence](code/0300_longest_increasing_subsequence.py)
     - [354. Russian Doll Envelopes](code/0354_russian_doll_envelopes.py)
@@ -159,10 +160,13 @@
         - [567. Permutation in String](code/0567_permutaion_in_string.py)
         - [438. Find All Anagrams in a String](code/0438_find_all_anagrams_in_a_string.py)
         - [003. Longest Substring Without Repeating Characters](code/0003_longest_substring_without_repeating_characters.py)
+        - [209. Minimum Size Subarray Sum](code/0209_minimum_size_subarray_sum.py)
     - Intervals
         - [0056. Merge Intervals](code/0056_merge_intervals.py)
         - [1288. Remove Covered Intervals](code/1288_remove_covered_intervals.py)
         - [986. Interval List Intersections](code/0986_interval_list_intersections.py)
+    - Stack 
+        - [155. Min Stack](code/0155_min_stack.py)
     - Hash Table
         - [659. Split Array into Consecutive Subsequences](code/0659_split_array_into_consecutive_subsequences.py)
     - Heap
