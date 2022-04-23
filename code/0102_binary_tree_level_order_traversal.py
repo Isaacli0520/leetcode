@@ -5,13 +5,18 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         if not root:
             return []
-        res, level = [], [root]
-        while level:
-            res.append([node.val for node in level])
-            pairs = [(node.left, node.right) for node in level]
-            # next level = children of this level
-            level = [leaf for pair in pairs for leaf in pair if leaf]
+        queue = deque([root])
+        res = []
+        while queue:
+            res.append([])
+            for i in range(len(queue)):
+                node = queue.popleft()
+                res[-1].append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
         return res

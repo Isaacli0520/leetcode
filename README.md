@@ -62,6 +62,8 @@
     - [652. Find Duplicate Subtrees](code/0652_find_duplicate_subtrees.py)
     - [236. Lowest Common Ancestor of a Binary Tree](code/0236_lowest_common_ancestor_of_binary_tree.py)
     - [222. Count Complete Tree Nodes](code/0222_count_complete_tree_nodes.py)
+    - [102. Binary Tree Level Order Traversal](code/0102_binary_tree_level_order_traversal.py)
+    - [103. Binary Tree Zigzag Level Order Traversal](code/0103_binary_tree_zigzag_level_order_traversal.py)
 5. Binary Search Tree
     - [230. Kth Smallest Element in a BST](code/0230_kth_smallest_element_in_a_bst.py)
     - [538. Convert BST to Greater Tree](code/0538_convert_bst_to_greater_tree.py)
@@ -154,7 +156,10 @@
 12. Math
     - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
 
-13. Misc
+13. Simulation
+    - [289. Game of Life](code/0289_game_of_life.py)
+
+14. Misc
     - [Sliding Window](#sliding-window)
         - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
         - [567. Permutation in String](code/0567_permutaion_in_string.py)
