@@ -191,6 +191,10 @@
         - [496. Next Greater Element I](code/0496_next_greater_element_1.py)
         - [739. Daily Temperatures](code/0739_daily_temperatures.py)
         - [503. Next Greater Element II](code/0503_next_greater_element_2.py)
+    - Monotonic Queue
+        - [239. Sliding Window Maximum](code/0239_sliding_window_maximum.py)
+    - Interval Scheduling Problem
+        - [435. Non-overlapping Intervals](code/0435_non-overlapping_intervals.py)
     - Misc
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
         - [146. LRU Cache](code/0146_lru_cache.py)
