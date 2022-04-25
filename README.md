@@ -174,6 +174,7 @@
         - [155. Min Stack](code/0155_min_stack.py)
     - Hash Table
         - [659. Split Array into Consecutive Subsequences](code/0659_split_array_into_consecutive_subsequences.py)
+        - [049. Group Anagrams](code/0049_group_anagrams.py)
     - Heap
         - [703. Kth Largest Element in a Stream](code/0703_kth_largest_element_in_a_stream.py)
     - Merge Sort
@@ -193,6 +194,8 @@
     - Misc
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
         - [146. LRU Cache](code/0146_lru_cache.py)
+        - [232. Implement Queue Using Stacks](code/0232_implement_queue_using_stacks.py)
+        - [225. Implement Stack Using Queues](code/0225_implement_stack_using_queues.py)
 
 # To-do
 - 0010 regular expression matching
