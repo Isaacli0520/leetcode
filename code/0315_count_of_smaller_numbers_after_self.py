@@ -1,6 +1,29 @@
 class Solution:
     def countSmaller(self, nums: List[int]) -> List[int]:
         res = [0] * len(nums)
+        
+        def helper(ls):
+            if len(ls) <= 1:
+                return ls
+            mid = len(ls) // 2
+            left = helper(ls[:mid])
+            right = helper(ls[mid:])
+            l, r = len(left) - 1, len(right) - 1
+            for i in range(len(ls) - 1, -1, -1):
+                if r < 0 or (l >= 0 and nums[left[l]] > nums[right[r]]):
+                    res[left[l]] += r + 1
+                    ls[i] = left[l]
+                    l -= 1
+                else:
+                    ls[i] = right[r]
+                    r -= 1
+            return ls
+        
+        helper(list(range(len(nums))))
+        return res
+
+    def countSmaller(self, nums: List[int]) -> List[int]:
+        res = [0] * len(nums)
         def sort(indexes):
             if len(indexes) <= 1:
                 return indexes
