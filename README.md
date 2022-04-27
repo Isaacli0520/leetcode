@@ -152,6 +152,10 @@
     - [045. Jump Game II](code/0045_jump_game_2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
+    - Interval Scheduling Problem
+        - [435. Non-overlapping Intervals](code/0435_non-overlapping_intervals.py)
+        - [452. Minimum Number of Arrows to Burst Balloons](code/0452_minimum_number_of_arrows_to_burst_balloons.py)
+    - [1024. Video Stitching](code/1024_video_stitching.py)
 
 12. Math
     - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
@@ -193,8 +197,6 @@
         - [503. Next Greater Element II](code/0503_next_greater_element_2.py)
     - Monotonic Queue
         - [239. Sliding Window Maximum](code/0239_sliding_window_maximum.py)
-    - Interval Scheduling Problem
-        - [435. Non-overlapping Intervals](code/0435_non-overlapping_intervals.py)
     - Misc
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
         - [146. LRU Cache](code/0146_lru_cache.py)

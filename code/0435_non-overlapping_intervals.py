@@ -2,7 +2,7 @@ class Solution:
     # Greedy
     # 
     # Always pick the one with the earliest end time because 
-    # this  provides the maximum rest intervals for us to pick
+    # this provides the maximum rest intervals for us to pick
     # the next interval. Suppose we have a somewhat later interval
     # with bigger end, it will have at least one less interval
     # for us to choose from.
