@@ -147,9 +147,12 @@
     - [376. Wiggle Subsequence](code/0376_wiggle_subsequence.py)
     - [377. Combination Sum IV](code/0377_combination_sum_4.py)
     - [264. Ugly Number 2](code/0264_ugly_number_2.py)
-    - [198. House Robber](code/0198_house_robber.py)
-    - [213. House Robber II](code/0213_house_robber_2.py)
-    - [337. House Robber III](code/0337_house_robber_3.py)
+    - House Robber
+        - [198. House Robber](code/0198_house_robber.py)
+        - [213. House Robber II](code/0213_house_robber_2.py)
+        - [337. House Robber III](code/0337_house_robber_3.py)
+    - Buy and Sell Stock
+        - [121. Best Time to Buy and Sell Stock](code/0121_best_time_to_buy_and_sell_stock.py)
     - [887. Super Egg Drop](code/0887_super_egg_drop.py)
     - [312. Burst Balloons](code/0312_burst_balloons.py)
 
