@@ -1,23 +1,20 @@
 class Solution:
-    # def rob(self, nums: List[int]) -> int:
-    #     self.dp = {}
-    #     def helper(m, start):
-    #         if start >= len(m):
-    #             return 0
-    #         if start in self.dp:
-    #             return self.dp[start]
-    #         self.dp[start] = max(m[start] + helper(m, start + 2), helper(m, start + 1))
-    #         return self.dp[start]
-    #     return helper(nums, 0)
-    
-    # O(1) space
+    # DP optimized
     def rob(self, nums: List[int]) -> int:
-        if not nums:
-            return 0
-        prev, curr = 0, nums[0]
-        # curr - dp[i - 1]
-        # prev - dp[i - 2]
-        # dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])
-        for i in range(1, len(nums)):
-            prev, curr = curr, max(prev + nums[i], curr)
+        prev, curr = 0, 0
+        for num in nums:
+            prev2 = prev
+            prev = curr
+            curr = max(prev, prev2 + num)
         return curr
+        
+    # DP
+    # dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+    def rob(self, nums: List[int]) -> int:
+        if len(nums) < 3:
+            return max(nums)
+        dp = nums[:]
+        dp[1] = max(nums[1], nums[0])
+        for i in range(2, len(nums)):
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+        return dp[-1]

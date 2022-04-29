@@ -1,13 +1,24 @@
 class Solution:
-    def superEggDrop(self, K, N):
+    # DP
+    # dp[m][k] = maximum number of floors we can check with k eggs and m moves
+    # dp[m][k] = 1 + dp[m - 1][k - 1] + dp[m - 1][k]
+    # we take 1 move to some floor (the first 1 in the equation)
+    # if egg breaks
+    #   the max number of floors we can check is dp[m - 1][k - 1]
+    # if egg doesn't break
+    #   the max number of floors we can check is dp[m - 1][k]
+    def superEggDrop(self, K: int, N: int) -> int:
         dp = [[0] * (K + 1) for i in range(N + 1)]
         for m in range(1, N + 1):
             for k in range(1, K + 1):
                 dp[m][k] = dp[m - 1][k - 1] + dp[m - 1][k] + 1
-            if dp[m][K] >= N: return m
+            # If using m moves and K eggs can reach floor higher than N,
+            # then m is the min move
+            if dp[m][K] >= N:
+                return m
         
         
-    # DP brute force
+    # DP brute force (TLE)
     def superEggDrop(self, k: int, n: int) -> int:
         dp = {}
         
