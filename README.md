@@ -147,6 +147,7 @@
     - [376. Wiggle Subsequence](code/0376_wiggle_subsequence.py)
     - [377. Combination Sum IV](code/0377_combination_sum_4.py)
     - [264. Ugly Number 2](code/0264_ugly_number_2.py)
+    - [887. Super Egg Drop](code/0887_super_egg_drop.py)
 
 11. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
