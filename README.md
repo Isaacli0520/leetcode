@@ -18,6 +18,8 @@
         - [380. Insert Delete GetRandom O(1)](code/0380_insert_delete_getrandom_o1.py)
         - [710. Random Pick with Blacklist](code/0710_random_pick_with_blacklist.py)
         - [041. First Missing Positive](code/0041_first_missing_positive.py)
+        - [645. Set Mismatch](code/0645_set_mismatch.py)
+        - [287. Find the Duplicate Number](code/0287_find_the_duplicated_number.py)
     - Double Pointers
         - [026. Remove Duplicates from Sorted Array](code/0026_remove_duplicates_from_sorted_array.py)
         - [167. Two Sum II - Input Array Is Sorted](code/0167_two_sum_2_sorted_array.py)
