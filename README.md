@@ -213,6 +213,8 @@
         - [503. Next Greater Element II](code/0503_next_greater_element_2.py)
     - Monotonic Queue
         - [239. Sliding Window Maximum](code/0239_sliding_window_maximum.py)
+    - Random Sampling
+        - [382. Linked List Random Node](code/0382_linked_list_random_node.py)
     - Misc
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
         - [146. LRU Cache](code/0146_lru_cache.py)
