@@ -20,11 +20,13 @@
         - [041. First Missing Positive](code/0041_first_missing_positive.py)
         - [645. Set Mismatch](code/0645_set_mismatch.py)
         - [287. Find the Duplicate Number](code/0287_find_the_duplicated_number.py)
-    - Double Pointers
+    - Two Pointers
         - [026. Remove Duplicates from Sorted Array](code/0026_remove_duplicates_from_sorted_array.py)
         - [167. Two Sum II - Input Array Is Sorted](code/0167_two_sum_2_sorted_array.py)
+        - [151. Reverse Words in a String](code/0151_reverse_words_in_a_string.py)
         - [344. Reverse String](code/0344_reverse_string.py)
         - [005. Longest Palindromic Substring](code/0005_longest_palindromic_substring.py)
+        - [524. Longest Word in Dictionary through Deleting](code/0524_longest_word_in_dictionary_through_deleting.py)
     - Prefix Sum Array
         - [303. Range Sum Query](code/0303_range_sum_query.py)
         - [304. Range Sum Query 2D](code/0304_range_sum_query_2d.py)
