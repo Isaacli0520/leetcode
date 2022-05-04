@@ -22,7 +22,10 @@
         - [287. Find the Duplicate Number](code/0287_find_the_duplicated_number.py)
     - Two Pointers
         - [026. Remove Duplicates from Sorted Array](code/0026_remove_duplicates_from_sorted_array.py)
+        - [080. Remove Duplicates from Sorted Array II](code/0080_remove_duplicates_from_sorted_array_2.py)
         - [167. Two Sum II - Input Array Is Sorted](code/0167_two_sum_2_sorted_array.py)
+        - [611. Valid Triangle Number](code/0611_valid_triangle_number.py)
+        - [283. Move Zeroes](code/0283_move_zeroes.py)
         - [151. Reverse Words in a String](code/0151_reverse_words_in_a_string.py)
         - [344. Reverse String](code/0344_reverse_string.py)
         - [005. Longest Palindromic Substring](code/0005_longest_palindromic_substring.py)
