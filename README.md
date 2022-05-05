@@ -20,16 +20,6 @@
         - [041. First Missing Positive](code/0041_first_missing_positive.py)
         - [645. Set Mismatch](code/0645_set_mismatch.py)
         - [287. Find the Duplicate Number](code/0287_find_the_duplicated_number.py)
-    - Two Pointers
-        - [026. Remove Duplicates from Sorted Array](code/0026_remove_duplicates_from_sorted_array.py)
-        - [080. Remove Duplicates from Sorted Array II](code/0080_remove_duplicates_from_sorted_array_2.py)
-        - [167. Two Sum II - Input Array Is Sorted](code/0167_two_sum_2_sorted_array.py)
-        - [611. Valid Triangle Number](code/0611_valid_triangle_number.py)
-        - [283. Move Zeroes](code/0283_move_zeroes.py)
-        - [151. Reverse Words in a String](code/0151_reverse_words_in_a_string.py)
-        - [344. Reverse String](code/0344_reverse_string.py)
-        - [005. Longest Palindromic Substring](code/0005_longest_palindromic_substring.py)
-        - [524. Longest Word in Dictionary through Deleting](code/0524_longest_word_in_dictionary_through_deleting.py)
     - Prefix Sum Array
         - [303. Range Sum Query](code/0303_range_sum_query.py)
         - [304. Range Sum Query 2D](code/0304_range_sum_query_2d.py)
@@ -42,7 +32,26 @@
         - [0048. Rotate Image](code/0048_rotate_image.py)
         - [0054. Spiral Matrix](code/0054_spiral_matrix.py)
         - [0059. Spiral Matrix II](code/0059_spiral_matrix2.py)
-3. [Binary Search](#binary-search)
+3. Two Pointers
+    - [026. Remove Duplicates from Sorted Array](code/0026_remove_duplicates_from_sorted_array.py)
+    - [080. Remove Duplicates from Sorted Array II](code/0080_remove_duplicates_from_sorted_array_2.py)
+    - [167. Two Sum II - Input Array Is Sorted](code/0167_two_sum_2_sorted_array.py)
+    - [611. Valid Triangle Number](code/0611_valid_triangle_number.py)
+    - [283. Move Zeroes](code/0283_move_zeroes.py)
+    - [151. Reverse Words in a String](code/0151_reverse_words_in_a_string.py)
+    - [344. Reverse String](code/0344_reverse_string.py)
+    - [005. Longest Palindromic Substring](code/0005_longest_palindromic_substring.py)
+    - [524. Longest Word in Dictionary through Deleting](code/0524_longest_word_in_dictionary_through_deleting.py)
+    - [015. 3Sum](code/0015_3sum.py)
+    - [018. 4Sum](code/0018_4sum.py)
+    - [Sliding Window](#sliding-window)
+        - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
+        - [567. Permutation in String](code/0567_permutaion_in_string.py)
+        - [438. Find All Anagrams in a String](code/0438_find_all_anagrams_in_a_string.py)
+        - [003. Longest Substring Without Repeating Characters](code/0003_longest_substring_without_repeating_characters.py)
+        - [209. Minimum Size Subarray Sum](code/0209_minimum_size_subarray_sum.py)
+        - [713. Subarray Product Less Than K](code/0713_subarray_product_less_than_k.py)
+4. [Binary Search](#binary-search)
     - Basic
         - [704. Binary Search](code/0704_binary_search.py)
         - [034. Find First and Last Position of Element in Sorted Array](code/0034_find_first_and_last_position_of_element_in_sorted_array.py)
@@ -54,7 +63,7 @@
         - [1011. Capacity To Ship Packages Within D Days](code/1011_capacity_to_ship_packages_within_d_days.py)
         - [1283. Find the Smallest Divisor Given a Threshold](code/1283_find_the_smallest_divisor_given_a_threshold.py)
         - [1482. Minimum Number of Days to Make m Bouquets](code/1482_minimum_number_of_days_to_make_m_bouquets.py)
-4. Binary Tree
+5. Binary Tree
     - [144. Binary Tree Preorder Traversal](code/0144_binary_tree_preorder_traversal.py)
     - [104. Maximum Depth of Binary Tree](code/0104_maximum_depth_of_binary_tree.py)
     - [654. Maximum Binary Tree](code/0654_maximum_binary_tree.py)
@@ -71,7 +80,7 @@
     - [222. Count Complete Tree Nodes](code/0222_count_complete_tree_nodes.py)
     - [102. Binary Tree Level Order Traversal](code/0102_binary_tree_level_order_traversal.py)
     - [103. Binary Tree Zigzag Level Order Traversal](code/0103_binary_tree_zigzag_level_order_traversal.py)
-5. Binary Search Tree
+6. Binary Search Tree
     - [230. Kth Smallest Element in a BST](code/0230_kth_smallest_element_in_a_bst.py)
     - [538. Convert BST to Greater Tree](code/0538_convert_bst_to_greater_tree.py)
     - [098. Validate Binary Search Tree](code/0098_validate_binary_search_tree.py)
@@ -81,7 +90,7 @@
     - [095. Unique Binary Search Trees II](code/0095_unique_binary_search_trees2.py)
     - [1373. Maximum Sum BST in Binary Tree](code/1373_maximum_sum_bst_in_binary_tree.py)
 
-6. Graph
+7. Graph
     - [797. All Paths From Source to Target](code/0797_all_paths_from_source_to_target.py)
     - [207. Course Schedule](code/0207_course_schedule.py)
     - [210. Course Schedule II](code/0210_course_schedule2.py)
@@ -101,12 +110,12 @@
         - [1631. Path With Minimum Effort](code/1631_path_with_minimum_effort.py)
         - [1514. Path With Maximum Probability](code/1514_path_with_maximum_probability.py)
         - [787. Cheapest Flights Within K Stops](code/0787_cheapest_flights_within_k_stops.py)
-7. Breadth First Search
+8. Breadth First Search
     - [111. Min Depth of Binary Tree](code/0111_min_depth_of_binary_tree.py)
     - [752. Open the Lock](code/0752_open_the_lock.py)
     - [773. Sliding Puzzle](code/0773_sliding_puzzle.py)
 
-8. Depth First Search
+9. Depth First Search
     - [200. Number of Islands](code/0200_number_of_islands.py)
     - [695. Max Area of Island](code/0695_max_area_of_island.py)
     - [827. Making a Large Island](code/0827_making_a_large_island.py)
@@ -114,7 +123,7 @@
     - [1020. Number of Enclaves](code/1020_number_of_enclaves.py)
     - [1905. Count Sub Islands](code/1905_count_sub_islands.py)
 
-9. Backtracking
+10. Backtracking
     - [017. Letter Combinations of a Phone Number](code/0017_letter_combinations_of_a_phone_number.py)
     - [022. Generate Parentheses](code/0022_generate_parentheses.py)
     - [039. Combination Sum](code/0040_combination_sum_2.py)
@@ -130,7 +139,7 @@
     - [079. Word Search](code/0079_word_search.py)
     - [698. Partition to K Equal Sum Subsets](code/0698_partition_to_k_equal_sum_subsets.py)
 
-10. Dynamic Programming
+11. Dynamic Programming
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
     - [119. Pascal's Triangle II](code/0119_pascals_triangle_2.py)
@@ -168,7 +177,7 @@
     - [887. Super Egg Drop](code/0887_super_egg_drop.py)
     - [312. Burst Balloons](code/0312_burst_balloons.py)
 
-11. Greedy
+12. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
     - [316. Remove Duplicate Letters](code/0316_remove_duplicate_letters.py)
     - [870. Advantage Shuffle](code/0870_advantage_shuffle.py)
@@ -178,19 +187,13 @@
     - [1024. Video Stitching](code/1024_video_stitching.py)
     - [134. Gas Station](code/0134_gas_station.py)
 
-12. Math
+13. Math
     - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
 
-13. Simulation
+14. Simulation
     - [289. Game of Life](code/0289_game_of_life.py)
 
-14. Misc
-    - [Sliding Window](#sliding-window)
-        - [076. Minimum Window Substring](code/0076_minimum_window_substring.py)
-        - [567. Permutation in String](code/0567_permutaion_in_string.py)
-        - [438. Find All Anagrams in a String](code/0438_find_all_anagrams_in_a_string.py)
-        - [003. Longest Substring Without Repeating Characters](code/0003_longest_substring_without_repeating_characters.py)
-        - [209. Minimum Size Subarray Sum](code/0209_minimum_size_subarray_sum.py)
+15. Misc
     - Intervals
         - [0056. Merge Intervals](code/0056_merge_intervals.py)
         - [1288. Remove Covered Intervals](code/1288_remove_covered_intervals.py)
