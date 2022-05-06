@@ -1,4 +1,22 @@
 class Solution:
+    # Match longest valid parentheses continuously
+    # Keep a dp array that tracks the longest valid parentheses until
+    # index i. (For cases like ")()())")
+    def longestValidParentheses(self, s: str) -> int:
+        dp = [0] * (len(s) + 1)
+        maxi = 0
+        stack = []
+        for i in range(len(s)):
+            if s[i] == "(":
+                stack.append(i)
+            else:
+                if stack:
+                    left_index = stack.pop()
+                    dp[i + 1] = i - left_index + 1 + dp[left_index]
+                    maxi = max(maxi, dp[i + 1])
+        return maxi
+
+    # No Stack
     def longestValidParentheses(self, s: str) -> int:
         max_len, open_p = 0, 0
         # Dp[i] represents longest length matches to current index

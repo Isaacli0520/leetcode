@@ -187,19 +187,26 @@
     - [1024. Video Stitching](code/1024_video_stitching.py)
     - [134. Gas Station](code/0134_gas_station.py)
 
-13. Math
+13. Stack 
+    - [020. Valid Parentheses](code/0020_valid_parentheses.py)
+    - [155. Min Stack](code/0155_min_stack.py)
+    - [032. Longest Valid Parentheses](code/0032_longest_valid_parentheses.py)
+    - Monotonic Stack
+        - [496. Next Greater Element I](code/0496_next_greater_element_1.py)
+        - [739. Daily Temperatures](code/0739_daily_temperatures.py)
+        - [503. Next Greater Element II](code/0503_next_greater_element_2.py)
+
+14. Math
     - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
 
-14. Simulation
+15. Simulation
     - [289. Game of Life](code/0289_game_of_life.py)
 
-15. Misc
+16. Misc
     - Intervals
         - [0056. Merge Intervals](code/0056_merge_intervals.py)
         - [1288. Remove Covered Intervals](code/1288_remove_covered_intervals.py)
         - [986. Interval List Intersections](code/0986_interval_list_intersections.py)
-    - Stack 
-        - [155. Min Stack](code/0155_min_stack.py)
     - Hash Table
         - [659. Split Array into Consecutive Subsequences](code/0659_split_array_into_consecutive_subsequences.py)
         - [049. Group Anagrams](code/0049_group_anagrams.py)
@@ -215,10 +222,6 @@
         - [347. Top K Frequent Elements](code/0347_top_k_frequent_elements.py)
     - Divide and Conquer
         - [241. Different Ways to Add Parentheses](code/0241_different_ways_to_add_parentheses.py)
-    - Monotonic Stack
-        - [496. Next Greater Element I](code/0496_next_greater_element_1.py)
-        - [739. Daily Temperatures](code/0739_daily_temperatures.py)
-        - [503. Next Greater Element II](code/0503_next_greater_element_2.py)
     - Monotonic Queue
         - [239. Sliding Window Maximum](code/0239_sliding_window_maximum.py)
     - Random Sampling
