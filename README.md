@@ -191,6 +191,7 @@
     - [020. Valid Parentheses](code/0020_valid_parentheses.py)
     - [155. Min Stack](code/0155_min_stack.py)
     - [032. Longest Valid Parentheses](code/0032_longest_valid_parentheses.py)
+    - [1209. Remove All Adjacent Duplicates in String II](code/1209_remove_all_adjacent_duplicates_in_string_2.py)
     - Monotonic Stack
         - [496. Next Greater Element I](code/0496_next_greater_element_1.py)
         - [739. Daily Temperatures](code/0739_daily_temperatures.py)
