@@ -3,21 +3,23 @@ class Solution:
         r, c = len(board), len(board[0])
         visited = [[False] * c for _ in range(r)]
         
-        def helper(m, n, idx):
-            if idx == len(word):
-                return True
-            if not (m >= 0 and m < r) or not (n >= 0 and n < c) or visited[m][n] or board[m][n] != word[idx]:
+        def dfs(i, j, k):
+            if not(i >= 0 and i < r and j >= 0 and j < c) or visited[i][j]:
                 return False
-            
-            visited[m][n] = True
-            for i, j in [(m - 1, n), (m, n - 1), (m + 1, n), (m, n + 1)]:
-                if helper(i, j, idx + 1):
+            if board[i][j] != word[k]:
+                return False
+            if k == len(word) - 1:
+                return True
+            visited[i][j] = True
+            for m, n in [(i, j - 1), (i - 1, j), (i + 1, j), (i, j + 1)]:  
+                if dfs(m, n, k + 1):
                     return True
-            visited[m][n] = False
+            visited[i][j] = False
             return False
         
         for i in range(r):
             for j in range(c):
-                if helper(i, j, 0):
+                if dfs(i, j, 0):
                     return True
         return False
+        

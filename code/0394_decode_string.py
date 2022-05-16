@@ -1,4 +1,22 @@
 class Solution:
+    # Stack of tuple(list)
+    def decodeString(self, s: str) -> str:
+        stack = [[1, ""]]
+        num = ""
+        for c in s:
+            if c.isdigit():
+                num += c
+            elif c == "[":
+                stack.append([int(num), ""])
+                num = ""
+            elif c == "]":
+                s_num, ss = stack.pop()
+                stack[-1][1] += ss * s_num
+            else:
+                stack[-1][1] += c
+        return stack[0][1]
+                
+    # Stack of string and int
     def decodeString(self, s: str) -> str:
         stack = []
         tmp_str = ""
