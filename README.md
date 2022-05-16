@@ -193,6 +193,8 @@
     - [032. Longest Valid Parentheses](code/0032_longest_valid_parentheses.py)
     - [1209. Remove All Adjacent Duplicates in String II](code/1209_remove_all_adjacent_duplicates_in_string_2.py)
     - [394. Decode String](code/0394_decode_string.py)
+    - [430. Flatten a Multilevel Doubly Linked List](code/0430_flatten_a_multilevel_doubly_linked_list.py)
+    - [1472. Design Browser History](code/1472_design_browser_history.py)
     - Monotonic Stack
         - [496. Next Greater Element I](code/0496_next_greater_element_1.py)
         - [739. Daily Temperatures](code/0739_daily_temperatures.py)

@@ -5,11 +5,10 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    # Iterative
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        curr = root
         stack = []
         prev = None
+        curr = root
         while curr or stack:
             while curr:
                 stack.append(curr)
@@ -20,8 +19,7 @@ class Solution:
             prev = curr
             curr = curr.right
         return True
-        
-    # Recursive
+    
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         def helper(node, mini, maxi):
             if not node:
@@ -30,6 +28,9 @@ class Solution:
                 return False
             if maxi and node.val >= maxi.val:
                 return False
+            
             return helper(node.left, mini, node) and helper(node.right, node, maxi)
-        
         return helper(root, None, None)
+        
+            
+            
