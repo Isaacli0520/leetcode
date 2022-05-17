@@ -5,17 +5,20 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def findFrequentTreeSum(self, root: TreeNode) -> List[int]:
-        if not root:
-            return []
+    def findFrequentTreeSum(self, root: Optional[TreeNode]) -> List[int]:
+        
+        d = collections.defaultdict(int)
+        
         def helper(node):
             if not node:
                 return 0
-            s = node.val + helper(node.left) + helper(node.right)
-            count[s] += 1
-            return s
+            left = helper(node.left)
+            right = helper(node.right)
+            
+            cur_sum = left + right + node.val
+            d[cur_sum] += 1
+            return cur_sum
         
-        count = collections.Counter()
         helper(root)
-        maxCount = max(count.values())
-        return [s for s in count if count[s] == maxCount]
+        maxi = max(d.values())
+        return [k for k, v in d.items() if v == maxi]
