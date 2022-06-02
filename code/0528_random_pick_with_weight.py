@@ -1,11 +1,9 @@
-from random import randrange
 class Solution:
     # Presum array: length of len(w) + 1
     def __init__(self, w: List[int]):
-        presums = [0]
-        for i, weight in enumerate(w):
-            presums.append(weight + presums[i])
-        self.presums = presums
+        self.presum = [0]
+        for weight in w:
+            self.presum.append(self.presum[-1] + weight)
 
     # Example:
     #    idx: N, 0, 1, 2, 3, 4, 5
@@ -14,26 +12,23 @@ class Solution:
     # Random value: 3
     # Binary search result: idx 2 of presum array
     # Actual idx: 1
-    # Therefore, returns mid - 1 or left - 1
+    # Therefore, returns mid or left - 1
     def pickIndex(self) -> int:
         # Random number of range [1, self.presums[-1]]
-        target = randrange(1, self.presums[-1] + 1)
-        left, right = 0, len(self.presums)
+        target = random.randint(0, self.presum[-1] - 1)
+        left, right = 0, len(self.presum)
         # Binary search
         # Returns the minimum value's idx that is
         # bigger than target
         while left < right:
             mid = left + (right - left) // 2
-            num = self.presums[mid]
-            if target == num:
-                return mid - 1
-            elif target < num:
+            if target == self.presum[mid]:
+                return mid
+            elif target < self.presum[mid]:
                 right = mid
-            elif target > num:
+            else:
                 left = mid + 1
         return left - 1
-        
-
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(w)

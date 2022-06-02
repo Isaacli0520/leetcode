@@ -1,5 +1,7 @@
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
+        # len(nums) - 1 ensures that mid < len(nums) - 1
+        # therefore nums[mid + 1] won't cause index out of range
         left, right = 0, len(nums) - 1
         while left < right:
             mid = int(left + (right - left) / 2)
