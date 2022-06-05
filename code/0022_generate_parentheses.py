@@ -1,20 +1,16 @@
 class Solution:
-    # Backtracking
     def generateParenthesis(self, n: int) -> List[str]:
         res = []
-
-        def helper(path, op, close):
-            if op == n and close == n:
-                res.append("".join(path[:]))
-            chars = []
+        def helper(curr, op, ed):
+            if op == n and ed == n:
+                res.append("".join(curr))
             if op < n:
-                chars.append(("(", 1, 0))
-            if close <  op:
-                chars.append((")", 0, 1))
-            for ch, a, b in chars:
-                path.append(ch)
-                helper(path, op + a, close + b)
-                path.pop()
-
+                curr.append('(')
+                helper(curr, op + 1, ed)
+                curr.pop()
+            if op > ed:
+                curr.append(')')
+                helper(curr, op, ed + 1)
+                curr.pop()
         helper([], 0, 0)
         return res

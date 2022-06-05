@@ -190,6 +190,8 @@
 
 13. Stack 
     - [020. Valid Parentheses](code/0020_valid_parentheses.py)
+    - [0921. Minimum Add to Make Parentheses Valid](code/0921_minimum_add_to_make_parentheses_valid.py)
+    - [1541. Minimum Insertions to Balance a Parentheses String](code/1541_minimum_insertions_to_balance_a_parentheses_string.py)
     - [155. Min Stack](code/0155_min_stack.py)
     - [032. Longest Valid Parentheses](code/0032_longest_valid_parentheses.py)
     - [1209. Remove All Adjacent Duplicates in String II](code/1209_remove_all_adjacent_duplicates_in_string_2.py)

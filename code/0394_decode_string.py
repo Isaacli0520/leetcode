@@ -29,12 +29,12 @@ class Solution:
                 stack.append(tmp_num)
                 tmp_str = ""
                 tmp_num = 0
-            if char == "]":
+            elif char == "]":
                 num = stack.pop()
                 prev_str = stack.pop()
                 tmp_str = prev_str + num * tmp_str
-            if char.isdigit():
+            elif char.isdigit():
                 tmp_num = tmp_num * 10 + int(char)
-            if char.isalpha():
+            elif char.isalpha():
                 tmp_str += char
         return tmp_str
