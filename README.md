@@ -217,6 +217,7 @@
     - Hash Table
         - [659. Split Array into Consecutive Subsequences](code/0659_split_array_into_consecutive_subsequences.py)
         - [049. Group Anagrams](code/0049_group_anagrams.py)
+        - [387. First Unique Character in a String](code/0387_first_unique_character_in_a_string.py)
     - Heap
         - [703. Kth Largest Element in a Stream](code/0703_kth_largest_element_in_a_stream.py)
         - [295. Find Median From Data Stream](code/0295_find_median_from_data_stream.py)
