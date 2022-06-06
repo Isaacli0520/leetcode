@@ -16,6 +16,7 @@
 2. Array
     - Misc
         - [001. Two Sum](code/0001_two_sum.py)
+        - [1865. Finding Pairs With a Certain Sum](code/1865_finding_pairs_with_a_certain_sum.py)
         - [380. Insert Delete GetRandom O(1)](code/0380_insert_delete_getrandom_o1.py)
         - [710. Random Pick with Blacklist](code/0710_random_pick_with_blacklist.py)
         - [041. First Missing Positive](code/0041_first_missing_positive.py)
