@@ -12,6 +12,7 @@
     - [092. Reverse Linked List II](code/0092_reverse_linked_list_2.py)
     - [025. Reverse Nodes in k-Group](code/0025_reverse_nodes_in_k_group.py)
     - [234. Palindrome Linked List](code/0234_palindrome_linked_list.py)
+    - [138. Copy List with Random Pointer](code/0138_copy_list_with_random_pointer.py)
 2. Array
     - Misc
         - [001. Two Sum](code/0001_two_sum.py)
@@ -205,6 +206,7 @@
 
 14. Math
     - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
+    - [0204. Count Primes](code/0204_count_primes.py)
 
 15. Simulation
     - [289. Game of Life](code/0289_game_of_life.py)
