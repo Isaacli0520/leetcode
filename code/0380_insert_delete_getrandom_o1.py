@@ -1,36 +1,35 @@
-import random
 class RandomizedSet:
 
-    # Keep a dict to record the idx of each element
     def __init__(self):
-        self.d = {}
-        self.ls = []
-        self.length = 0
+        self.idxs = {}
+        self.vals = []
 
     def insert(self, val: int) -> bool:
-        if val in self.d:
-            return False
-        self.d[val] = self.length
-        self.ls.append(val)
-        self.length += 1
-        return True
+        if val not in self.idxs:
+            self.vals.append(val)
+            self.idxs[val] = len(self.vals) - 1
+            return True
+        return False
 
     # Instead of removing the element in the middle
     # of the list and move every element, we can swap
     # the element with the last element and pop the last
     # element. Remember to update the dict.
     def remove(self, val: int) -> bool:
-        if val not in self.d:
+        if val not in self.idxs:
             return False
-        self.d[self.ls[-1]], self.ls[self.d[val]]= self.d[val], self.ls[-1]
-        del self.d[val]
-        self.ls.pop()
-        self.length -= 1
+        
+        rmv_idx = self.idxs[val]
+        self.vals[rmv_idx] = self.vals[-1]
+        self.idxs[self.vals[-1]] = rmv_idx
+        del self.idxs[val]
+        
+        self.vals.pop()
         return True
+        
 
     def getRandom(self) -> int:
-        return random.choice(self.ls)
-        
+        return random.choice(self.vals)
 
 
 # Your RandomizedSet object will be instantiated and called as such:

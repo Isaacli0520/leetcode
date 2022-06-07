@@ -26,3 +26,19 @@ class Solution:
             path.pop()
         helper(0)
         return res
+
+    # Backtracking
+    def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
+        res = []
+        
+        def helper(path, node):
+            if node == len(graph) - 1:
+                res.append(path[:])
+                return
+            for nxt in graph[node]:
+                path.append(nxt)
+                helper(path, nxt)
+                path.pop()
+                
+        helper([0], 0)
+        return res
