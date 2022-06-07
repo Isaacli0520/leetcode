@@ -13,10 +13,11 @@ class Solution:
     #   1. You sell the stock that you hold on day i - 1
     #   2. You continue to have no stock as on day i - 1
     def maxProfit(self, prices: List[int]) -> int:
-        prev_1, prev_0 = -prices[0], 0
+        prev_hold, prev_not = -prices[0], 0
         for i in range(1, len(prices)):
-            prev_1, prev_0 = max(prev_0 - prices[i], prev_1), max(prev_1 + prices[i], prev_0)
-        return prev_0
+            prev_not = max(prev_hold + prices[i], prev_not)
+            prev_hold = max(prev_not - prices[i], prev_hold)
+        return prev_not
     
     # Greedy
     #    -           *4

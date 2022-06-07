@@ -9,28 +9,45 @@ class Node:
 """
 
 class Solution:
+    # Iterative O(1) Space
     def connect(self, root: 'Node') -> 'Node':
-        ret = root
         node = root
-        level = child = Node()
+        child = Node()
+        level_start = child
         while node:
-            # connect to node.left, if node.left, 
-            # connect and move to next(node.left)
-            # also sets the starting node of next level(level.next)
-            child.next = node.left
-            if child.next:
+            # connect children
+            if node.left:
+                child.next = node.left
                 child = child.next
-            # connect to node.right, if node.right
-            # connect and move to next(node.right)
-            # also sets the starting node of next level(level.next)
-            child.next = node.right
-            if child.next:
+            if node.right:
+                child.next = node.right
                 child = child.next
-            # move to next parent node
+                
+            # move parent
             node = node.next
+            # If parent reaches None, go to next level
             if not node:
-                # end of level, go to next level(node = level.next)
-                node = level.next
-                # clear child
-                child = level
-        return ret
+                node = level_start.next
+                child = level_start
+                level_start.next = None
+        return root          
+            
+    
+    # BFS
+    def connect(self, root: 'Node') -> 'Node':
+        if not root:
+            return None
+        level = deque([root])
+        while level:
+            prev = None
+            curr_level_len = len(level)
+            for i in range(curr_level_len):
+                curr = level.popleft()
+                if prev:
+                    prev.next = curr
+                if curr.left:
+                    level.append(curr.left)
+                if curr.right:
+                    level.append(curr.right)
+                prev = curr
+        return root
