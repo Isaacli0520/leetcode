@@ -84,6 +84,7 @@
     - [222. Count Complete Tree Nodes](code/0222_count_complete_tree_nodes.py)
     - [102. Binary Tree Level Order Traversal](code/0102_binary_tree_level_order_traversal.py)
     - [103. Binary Tree Zigzag Level Order Traversal](code/0103_binary_tree_zigzag_level_order_traversal.py)
+    - [662. Maximum Width of Binary Tree](code/0662_maximum_width_of_binary_tree.py)
 6. Binary Search Tree
     - [230. Kth Smallest Element in a BST](code/0230_kth_smallest_element_in_a_bst.py)
     - [538. Convert BST to Greater Tree](code/0538_convert_bst_to_greater_tree.py)
