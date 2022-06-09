@@ -13,27 +13,24 @@ class Solution:
         needed = len(target)
         
         matched = 0
-        for i in range(l):
-            if s2[i] in target:
-                window[s2[i]] += 1
-                if window[s2[i]] == target[s2[i]]:
-                    matched += 1
-        if matched == needed:
-            return True
+        left, right = 0, 0
         
-        for i in range(1, len(s2) - l + 1):
-            old_char = s2[i - 1]
-            if old_char in target:
-                if window[old_char] == target[old_char]:
-                    matched -= 1
-                window[old_char] -= 1
-                
-            new_char = s2[i + l - 1]
+        while right < len(s2):
+            new_char = s2[right]
             if new_char in target:
                 window[new_char] += 1
                 if window[new_char] == target[new_char]:
                     matched += 1
+            right += 1
                     
+            if right - left > l:
+                old_char = s2[left]
+                if old_char in target:
+                    if window[old_char] == target[old_char]:
+                        matched -= 1
+                    window[old_char] -= 1
+                left += 1
+        
             if needed == matched:
                 return True
             
