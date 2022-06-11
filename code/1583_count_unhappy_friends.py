@@ -15,8 +15,8 @@ class Solution:
         res = 0
                         
         for a in d_pairs:
-            for b in d_pairs[a]:
-                if a in d_pairs[b]:
+            for u in d_pairs[a]:
+                if a in d_pairs[u]:
                     res += 1
                     break
         

@@ -84,7 +84,9 @@
     - [222. Count Complete Tree Nodes](code/0222_count_complete_tree_nodes.py)
     - [102. Binary Tree Level Order Traversal](code/0102_binary_tree_level_order_traversal.py)
     - [103. Binary Tree Zigzag Level Order Traversal](code/0103_binary_tree_zigzag_level_order_traversal.py)
+    - [199. Binary Tree Right Side View](code/0199_binary_tree_right_side_view.py)
     - [662. Maximum Width of Binary Tree](code/0662_maximum_width_of_binary_tree.py)
+    - [988. Smallest String Starting From Leaf](code/0988_smallest_string_starting_from_leaf.py)
 6. Binary Search Tree
     - [230. Kth Smallest Element in a BST](code/0230_kth_smallest_element_in_a_bst.py)
     - [538. Convert BST to Greater Tree](code/0538_convert_bst_to_greater_tree.py)
@@ -240,11 +242,13 @@
         - [239. Sliding Window Maximum](code/0239_sliding_window_maximum.py)
     - Random Sampling
         - [382. Linked List Random Node](code/0382_linked_list_random_node.py)
-    - Misc
+    - Data Structure
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
         - [146. LRU Cache](code/0146_lru_cache.py)
         - [232. Implement Queue Using Stacks](code/0232_implement_queue_using_stacks.py)
         - [225. Implement Stack Using Queues](code/0225_implement_stack_using_queues.py)
+    - Misc
+        - [1583. Count Unhappy Friends](code/1583_count_unhappy_friends.py)
 
 # To-do
 - 0010 regular expression matching
