@@ -4,33 +4,60 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    # Divide and conquer
-    # merge log k times (k is the number of lists)
+    # Heap
+    # Time: O(Nlogk), N: total number of Nodes; k: number of linked lists
+    #       (O(logk) for pop and push into heap)
+    # Space: O(k)
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
-        if len(lists) == 0:
-            return 
+        hp = []
+        head = ListNode()
+        curr = head
+        pk = 0
+        for node in lists:
+            if node:
+                heapq.heappush(hp, (node.val, pk, node))
+                pk += 1
+        while hp:
+            _val, _pk, node = heapq.heappop(hp)
+            curr.next = node
+            curr = curr.next
+            node = node.next
+            if node:
+                heapq.heappush(hp, (node.val, pk, node))
+                pk += 1
+        return head.next
+            
+            
+    # Divide and Conquer
+    # Time: O(Nlogk), N: total number of nodes; k number of linked lists
+    # Space: O(1)
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        if not lists:
+            return None
         if len(lists) == 1:
             return lists[0]
         mid = len(lists) // 2
-        return self.merge(self.mergeKLists(lists[:mid]), self.mergeKLists(lists[mid:]))
+        left = self.mergeKLists(lists[:mid])
+        right = self.mergeKLists(lists[mid:])
+        return self.mergeLists(left, right)
+        
     
-    def merge(self, p1, p2):
+    def mergeLists(self, a, b):
         head = ListNode()
         curr = head
-        while p1 is not None and p2 is not None:
-            if p1.val > p2.val:
-                curr.next = p2
-                p2 = p2.next
+        while a and b:
+            if a.val < b.val:
+                curr.next = a
+                a = a.next
             else:
-                curr.next = p1
-                p1 = p1.next
+                curr.next = b
+                b = b.next
             curr = curr.next
-        if p1 is not None:
-            curr.next = p1
-        if p2 is not None:
-            curr.next = p2
+        if a:
+            curr.next = a
+        if b:
+            curr.next = b
         return head.next
-                
-            
+        
         
         

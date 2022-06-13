@@ -1,26 +1,28 @@
 import collections
 class Solution:
-    # BFS
+    # BFS Topological Sort
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        # Count the num of prereq courses of each course
-        d = collections.defaultdict(list)
-        prereq_count_ls = [0] * numCourses
+        # Build Graph
+        # Count prereqs of each course
+        graph = [[] for i in range(numCourses)]
+        prereqs = [0] * numCourses
         for c, prereq in prerequisites:
-            d[prereq].append(c)
-            prereq_count_ls[c] += 1
-            
-        # Go through all courses that has no prereqs, append
-        # further no prereq courses as courses are taken
-        bfs = collections.deque(i for i in range(numCourses) if prereq_count_ls[i] == 0)
-        while bfs:
-            course = bfs.popleft()
-            for next_course in d[course]:
-                prereq_count_ls[next_course] -= 1
-                if prereq_count_ls[next_course] == 0:
-                    bfs.append(next_course)
-                    
-        # In the end, all courses should have no prereqs
-        return not sum(prereq_count_ls)
+            graph[prereq].append(c)
+            prereqs[c] += 1
+        
+        # Take courses that has no prereqs
+        # Add new courses that has no prereqs after taking
+        #   existing no prereq courses
+        queue = deque(i for i in range(numCourses) if prereqs[i] == 0)
+        while queue:
+            c = queue.popleft()
+            for nxt in graph[c]:
+                prereqs[nxt] -= 1
+                if prereqs[nxt] == 0:
+                    queue.append(nxt)
+        
+        # all courses should have no prereqs or there is a cycle
+        return sum(prereqs) == 0
 
     # DFS
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
