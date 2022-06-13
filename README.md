@@ -212,6 +212,7 @@
 14. Math
     - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
     - [0204. Count Primes](code/0204_count_primes.py)
+    - [0050. Pow(x, n)](code/0050_pow_x_n.py)
 
 15. Simulation
     - [289. Game of Life](code/0289_game_of_life.py)
@@ -247,6 +248,8 @@
         - [146. LRU Cache](code/0146_lru_cache.py)
         - [232. Implement Queue Using Stacks](code/0232_implement_queue_using_stacks.py)
         - [225. Implement Stack Using Queues](code/0225_implement_stack_using_queues.py)
+    - Segment Tree
+        - [307. Range Sum Query - Mutable](code/0307_range_sum_query_mutable.py)
     - Misc
         - [1583. Count Unhappy Friends](code/1583_count_unhappy_friends.py)
 

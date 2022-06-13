@@ -12,15 +12,29 @@ class Solution:
             "8":"tuv",
             "9":"wxyz"
         }
+        
+        # BFS
+        idx = 0
+        res = deque([""])
+        while idx < len(digits):
+            for i in range(len(res)):
+                tmp = res.popleft()
+                for c in d[digits[idx]]:
+                    res.append(tmp + c)
+            idx += 1
+        return res
+        
+        # Backtracking
         res = []
-        def helper(i, path):
-            if i == len(digits):
+        def helper(path, idx):
+            if idx == len(digits):
                 res.append("".join(path))
                 return
-            for letter in d[digits[i]]:
-                path.append(letter)
-                helper(i + 1, path)
+            for c in d[digits[idx]]:
+                path.append(c)
+                helper(path, idx + 1)
                 path.pop()
-        
-        helper(0, [])
+        helper([], 0)
         return res
+            
+                    
