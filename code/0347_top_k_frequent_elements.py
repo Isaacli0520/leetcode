@@ -1,21 +1,28 @@
 class Solution:
-    # Naive
+    # Heap
+    # O(n + nlogk) 
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        count = Counter(nums)
-        return [i for i, j in sorted(count.items(), key=lambda x:x[1], reverse=True)[:k]]
+        c = Counter(nums)
+        hp = []
+        for num, freq in c.items():
+            heapq.heappush(hp, (freq, num))
+            if len(hp) > k:
+                heapq.heappop(hp)
+        return [item[1] for item in hp]
+    
     
     # Bucket Sort
+    # O(n)
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        count = Counter(nums)
-        buckets = collections.defaultdict(list)
-        for num, freq in count.items():
-            buckets[freq].append(num)
+        c = Counter(nums)
+        bucket = defaultdict(list)
+        for num, freq in c.items():
+            bucket[freq].append(num)
         
         res = []
-        for freq in range(len(nums), -1, -1):
-            res += buckets[freq]
-            if len(res) >= k:
-                return res[:k]
-            
+        for freq in range(len(nums), 0, -1):
+            if freq in bucket:
+                res += bucket[freq]
+                if len(res) >= k:
+                    return res[:k]
         return res[:k]
-        

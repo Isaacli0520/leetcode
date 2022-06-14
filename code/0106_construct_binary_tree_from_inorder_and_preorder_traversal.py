@@ -10,15 +10,12 @@ class Solution:
     # postorder = [9]   [15,   7,   20],   [3]
     #            left |     right   |  root 
     def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
-        if not inorder:
+        if not postorder:
             return None
-        if len(inorder) == 1:
-            return TreeNode(inorder[0])
+
+        root = TreeNode(postorder[-1])
+        idx = inorder.index(root.val)
         
-        val = postorder[-1]
-        idx = inorder.index(val)
-        
-        root = TreeNode(val)
         root.left = self.buildTree(inorder[:idx], postorder[:idx])
         root.right = self.buildTree(inorder[idx + 1:], postorder[idx:-1])
         return root

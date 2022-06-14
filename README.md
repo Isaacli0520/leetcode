@@ -229,14 +229,14 @@
     - Heap
         - [703. Kth Largest Element in a Stream](code/0703_kth_largest_element_in_a_stream.py)
         - [295. Find Median From Data Stream](code/0295_find_median_from_data_stream.py)
+        - [347. Top K Frequent Elements](code/0347_top_k_frequent_elements.py)
+        - [692. Top K Frequent Words](code/0692_top_k_frequent_words.py)
     - Merge Sort
         - [912. Sort an Array](code/0912_sort_an_array.py)
         - [315. Count of Smaller Numbers After Self](code/0315_count_of_smaller_numbers_after_self.py)
         - [327. Count of Range Sum](code/0327_count_of_range_sum.py)
     - Quickselect
         - [215. Kth Largest Element in an Array](code/0215_kth_largest_element_in_an_array.py)
-    - Bucket Sort
-        - [347. Top K Frequent Elements](code/0347_top_k_frequent_elements.py)
     - Divide and Conquer
         - [241. Different Ways to Add Parentheses](code/0241_different_ways_to_add_parentheses.py)
     - Monotonic Queue

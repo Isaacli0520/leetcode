@@ -3,8 +3,6 @@ class MedianFinder:
     def __init__(self):
         self.small = []
         self.large = []
-        heapq.heapify(self.small)
-        heapq.heapify(self.large)
         
     # Case 1: len(self.small) > len(self.large)
     #   We want to push to large. To make sure the value pushed to large
