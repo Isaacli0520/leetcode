@@ -1,22 +1,22 @@
 class Solution:
     # BFS
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        graph = [[] for _ in range(numCourses)]
-        indegrees = [0] * numCourses
+        graph = [[] for i in range(numCourses)]
+        prereqs = [0] * numCourses
         for c, prereq in prerequisites:
             graph[prereq].append(c)
-            indegrees[c] += 1
+            prereqs[c] += 1
         
-        bfs = deque([i for i in range(numCourses) if indegrees[i] == 0])
-        topo_sort = [i for i in bfs]
-        while bfs:
-            curr = bfs.popleft()
-            for course in graph[curr]:
-                indegrees[course] -= 1
-                if indegrees[course] == 0:
-                    bfs.append(course)
-                    topo_sort.append(course)
-        return topo_sort if sum(indegrees) == 0 else []
+        res = []
+        queue = deque(i for i in range(numCourses) if prereqs[i] == 0)
+        while queue:
+            c = queue.popleft()
+            res.append(c)
+            for nxt in graph[c]:
+                prereqs[nxt] -= 1
+                if prereqs[nxt] == 0:
+                    queue.append(nxt)
+        return res if sum(prereqs) == 0 else []
         
     # DFS
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:

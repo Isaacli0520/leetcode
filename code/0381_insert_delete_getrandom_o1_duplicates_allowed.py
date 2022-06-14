@@ -26,6 +26,9 @@ class RandomizedCollection:
         if rmv_idx != len(self.vals) - 1:
             self.idxs[last].remove(len(self.vals) - 1)
             self.idxs[last].add(rmv_idx)
+
+        # self.idxs[last].add(rmv_idx)
+        # self.idxs[last].remove(len(self.vals) - 1)
         
         self.vals.pop()
         return True
