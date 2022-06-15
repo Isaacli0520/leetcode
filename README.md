@@ -60,6 +60,7 @@
         - [034. Find First and Last Position of Element in Sorted Array](code/0034_find_first_and_last_position_of_element_in_sorted_array.py)
     - Applications
         - [162. Find Peak Element](code/0162_find_peak_element.py)
+        - [852. Peak Index in a Mountain Array](code/0852_peak_index_in_a_mountain_array.py)
         - [528. Random Pick with Weight](code/0528_random_pick_with_weight.py)
         - [410. Split Array Largest Sum](code/0410_split_array_largest_sum.py)
         - [875. KoKo Eating Bananas](code/0875_koko_eating_bananas.py)
@@ -183,6 +184,7 @@
         - [188. Best Time to Buy and Sell Stock IV](code/0188_best_time_to_buy_and_sell_stock_4.py)
     - [887. Super Egg Drop](code/0887_super_egg_drop.py)
     - [312. Burst Balloons](code/0312_burst_balloons.py)
+    - [139. Word Break](code/0139_word_break.py)
 
 12. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
@@ -231,6 +233,9 @@
         - [295. Find Median From Data Stream](code/0295_find_median_from_data_stream.py)
         - [347. Top K Frequent Elements](code/0347_top_k_frequent_elements.py)
         - [692. Top K Frequent Words](code/0692_top_k_frequent_words.py)
+    - Trie
+        - [208. Implement Trie (Prefix Tree)](code/0208_implement_trie_(prefix_tree).py)
+        - [648. Replace Words](code/0648_replace_words.py)
     - Merge Sort
         - [912. Sort an Array](code/0912_sort_an_array.py)
         - [315. Count of Smaller Numbers After Self](code/0315_count_of_smaller_numbers_after_self.py)
