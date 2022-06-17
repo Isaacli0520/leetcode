@@ -1,5 +1,6 @@
 # Main
 1. Linked List
+    - [002. Add Two Numbers](code/0002_add_two_numbers.py)
     - [021. Merge Two Sorted Lists](code/0021_merge_two_sorted_lists.py)
     - [023. Merge k Sorted Lists](code/0023_merge_k_sorted_lists.py)
     - [083. Remove Duplicates from Sorted List](code/0083_remove_duplicates_from_sorted_list.py)
@@ -236,6 +237,8 @@
     - Trie
         - [208. Implement Trie (Prefix Tree)](code/0208_implement_trie_(prefix_tree).py)
         - [648. Replace Words](code/0648_replace_words.py)
+        - [211. Design Add and Search Words Data Structure](code/0211_design_add_and_search_words_data_structure.py)
+        - [677. Map Sum Pairs](code/0677_map_sum_pairs.py)
     - Merge Sort
         - [912. Sort an Array](code/0912_sort_an_array.py)
         - [315. Count of Smaller Numbers After Self](code/0315_count_of_smaller_numbers_after_self.py)
