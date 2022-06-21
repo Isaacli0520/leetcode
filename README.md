@@ -250,6 +250,7 @@
     - Monotonic Queue
         - [239. Sliding Window Maximum](code/0239_sliding_window_maximum.py)
     - Random Sampling
+        - [384. Shuffle an Array](code/0384_shuffle_an_array.py)
         - [382. Linked List Random Node](code/0382_linked_list_random_node.py)
     - Data Structure
         - [341. Flatten Nested List Iterator](code/0341_flatten_nested_list_iterator.py)
