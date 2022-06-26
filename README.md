@@ -186,6 +186,7 @@
     - [887. Super Egg Drop](code/0887_super_egg_drop.py)
     - [312. Burst Balloons](code/0312_burst_balloons.py)
     - [139. Word Break](code/0139_word_break.py)
+    - [2262. Total Appeal of A String](code/2262_total_appeal_of_a_string.py)
 
 12. Greedy
     - [045. Jump Game II](code/0045_jump_game_2.py)
