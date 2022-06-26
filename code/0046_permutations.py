@@ -12,19 +12,23 @@ class Solution:
         helper(nums, [])
         return res
 
-    # Dfs
+    # Use visited arr instead of creating new ones
     def permute(self, nums: List[int]) -> List[List[int]]:
-        res = []
-        def helper(nums, track):
-            if len(track) == len(nums):
-                res.append(track)
-                return
-            for i in range(len(nums)):
-                # O(n); Can use a hashtable to reduce to O(1)
-                if nums[i] not in track:
-                    helper(nums, track + [nums[i]])
-        helper(nums, [])
-        return res
+            res = []
+            visited = [False] * len(nums)
+            def helper(path):
+                if len(path) == len(nums):
+                    res.append(path[:])
+                    return
+                for i in range(len(nums)):
+                    if not visited[i]:
+                        path.append(nums[i])
+                        visited[i] = True
+                        helper(path)
+                        path.pop()
+                        visited[i] = False
+            helper([])
+            return res
     
     
     # Backtracking
