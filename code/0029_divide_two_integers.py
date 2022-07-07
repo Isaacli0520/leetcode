@@ -1,4 +1,5 @@
 class Solution:
+    # 58 / 5 = 11(10) = 1011(2)
     def divide(self, dividend: int, divisor: int) -> int:
         if dividend == -2147483648 and divisor == -1:
             return 2147483647
@@ -18,6 +19,23 @@ class Solution:
             shift -= 1
             
         if neg:
-            return 0 - res
+            return -res
         else:
             return res
+
+    # 58 / 5 = 11(10) = 1011(2)
+    def divide(self, dividend: int, divisor: int) -> int:
+        if (dividend == -2147483648 and divisor == -1):
+            return 2147483647
+        a = abs(dividend)
+        b = abs(divisor)
+        res = 0
+        for i in range(31, -1, -1):
+            if (a >> i) - b >= 0:
+                res += 1 << i
+                a -= b << i
+        
+        if (dividend > 0) == (divisor > 0):
+            return res
+        else:
+            return -res

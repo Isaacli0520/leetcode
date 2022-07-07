@@ -8,7 +8,7 @@ class Solution:
         for i in range(1, n):
             # Move pointer for the smallest next number
             # And append to list
-            a, b, c = nums[p2]*2, nums[p3]*3, nums[p5]*5
+            a, b, c = nums[p2] * 2, nums[p3] * 3, nums[p5] * 5
             curr = min(a,b,c)
             if curr == a:
                 p2 += 1

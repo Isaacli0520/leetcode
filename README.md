@@ -217,6 +217,7 @@
     - [1492. The kth Factor of n](code/1492_the_kth_factor_of_n.py)
     - [0204. Count Primes](code/0204_count_primes.py)
     - [0050. Pow(x, n)](code/0050_pow_x_n.py)
+    - [0029. 29. Divide Two Integers](code/0029_divide_two_integers.py)
 
 15. Simulation
     - [289. Game of Life](code/0289_game_of_life.py)
@@ -262,6 +263,7 @@
         - [307. Range Sum Query - Mutable](code/0307_range_sum_query_mutable.py)
     - Misc
         - [1583. Count Unhappy Friends](code/1583_count_unhappy_friends.py)
+        - [13. Roman to Integer](code/0013_roman_to_integer.py)
 
 # To-do
 - 0010 regular expression matching
