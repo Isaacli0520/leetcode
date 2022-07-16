@@ -5,14 +5,12 @@ class Solution:
     # Since we build dp from top left, row by row, from left to right,
     # we only need one row instead of a 2d array to store the dp table
     def minPathSum(self, grid: List[List[int]]) -> int:
-        row, col = len(grid), len(grid[0])
-        dp = [grid[0][c] for c in range(col)]
-        for c in range(1, col):
-            dp[c] += dp[c - 1]
-        
-        for r in range(1, row):
-            dp[0] += grid[r][0]
-            for c in range(1, col):
-                dp[c] = min(dp[c], dp[c - 1]) + grid[r][c]
-        
+        r, c = len(grid), len(grid[0])
+        dp = [grid[0][0]]
+        for i in range(1, c):
+            dp.append(dp[-1] + grid[0][i])
+        for i in range(1, r):
+            dp[0] += grid[i][0]
+            for j in range(1, c):
+                dp[j] = min(dp[j], dp[j - 1]) + grid[i][j]
         return dp[-1]

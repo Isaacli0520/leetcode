@@ -25,4 +25,4 @@ class Solution:
                 res += bucket[freq]
                 if len(res) >= k:
                     return res[:k]
-        return res[:k]
+        # return res[:k]
