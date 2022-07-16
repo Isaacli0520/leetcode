@@ -19,6 +19,25 @@ class Solution:
             prev = curr
             curr = curr.right
         return True
+
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        prev = None
+        
+        def helper(node):
+            if not node:
+                return True
+            
+            nonlocal prev
+            if not helper(node.left):
+                return False
+            if prev and prev.val >= node.val:
+                return False
+            prev = node
+            if not helper(node.right):
+                return False
+            return True
+        
+        return helper(root)
     
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         def helper(node, mini, maxi):
