@@ -89,6 +89,8 @@
     - [199. Binary Tree Right Side View](code/0199_binary_tree_right_side_view.py)
     - [662. Maximum Width of Binary Tree](code/0662_maximum_width_of_binary_tree.py)
     - [988. Smallest String Starting From Leaf](code/0988_smallest_string_starting_from_leaf.py)
+    - [515. Find Largest Value in Each Tree Row](code/0515_find_larget_val_in_each_tree_row.py)
+
 6. Binary Search Tree
     - [230. Kth Smallest Element in a BST](code/0230_kth_smallest_element_in_a_bst.py)
     - [538. Convert BST to Greater Tree](code/0538_convert_bst_to_greater_tree.py)
@@ -123,6 +125,7 @@
     - [111. Min Depth of Binary Tree](code/0111_min_depth_of_binary_tree.py)
     - [752. Open the Lock](code/0752_open_the_lock.py)
     - [773. Sliding Puzzle](code/0773_sliding_puzzle.py)
+    - [542. 01 Matrix](code/0542_01_matrix.py)
 
 9. Depth First Search
     - [200. Number of Islands](code/0200_number_of_islands.py)

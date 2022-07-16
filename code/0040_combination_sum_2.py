@@ -1,4 +1,5 @@
 class Solution:
+    # Sort candidates
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
         nums = sorted(candidates)
@@ -17,3 +18,27 @@ class Solution:
         
         helper([], target, 0)
         return res
+
+    # Use Counter
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        res = []
+        c = Counter(candidates)
+        cands = list(c.keys())
+        
+        def helper(path, num, start):
+            if num == 0:
+                res.append(path[:])
+                return
+            
+            for i in range(start, len(cands)):
+                cand = cands[i]
+                if num >= cand and c[cand]:
+                    path.append(cand)
+                    c[cand] -= 1
+                    helper(path, num - cand, i)
+                    c[cand] += 1
+                    path.pop()
+        
+        helper([], target, 0)
+        return res
+            
