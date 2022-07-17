@@ -152,8 +152,11 @@
     - [698. Partition to K Equal Sum Subsets](code/0698_partition_to_k_equal_sum_subsets.py)
 
 11. Dynamic Programming
+    - [070. Climbing Stairs](code/0070_climbing_stairs.py)
     - [053. Maximum Subarray](code/0053_maximum_subarray.py)
     - [509. Fibonacci Number](code/0509_fibonacci_number.py)
+    - [062. Unique Paths](code/0062_unique_paths.py)
+    - [063. Unique Paths II](code/0063_unique_path_2.py)
     - [119. Pascal's Triangle II](code/0119_pascals_triangle_2.py)
     - [322. Coin Change](code/0322_coin_change.py)
     - [300. Longest Increasing Subsequence](code/0300_longest_increasing_subsequence.py)

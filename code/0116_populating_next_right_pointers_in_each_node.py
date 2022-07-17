@@ -9,6 +9,25 @@ class Node:
 """
 
 class Solution:
+    # BFS
+    def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
+        if not root:
+            return root
+        
+        q = deque([root])
+        while q:
+            prev = None
+            for i in range(len(q)):
+                node = q.popleft()
+                if prev:
+                    prev.next = node
+                prev = node
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        return root
+
     # Iterative
     def connect(self, root: 'Node') -> 'Node':
         # level by level from left
