@@ -218,6 +218,7 @@
         - [496. Next Greater Element I](code/0496_next_greater_element_1.py)
         - [739. Daily Temperatures](code/0739_daily_temperatures.py)
         - [503. Next Greater Element II](code/0503_next_greater_element_2.py)
+        - [402. Remove K Digits](code/0402_remove_k_digits.py)
 
 14. Math
     - [12. Integer to Roman](code/0012_integer_to_roman.py)
