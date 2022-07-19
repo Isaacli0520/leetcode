@@ -24,6 +24,7 @@
         - [041. First Missing Positive](code/0041_first_missing_positive.py)
         - [645. Set Mismatch](code/0645_set_mismatch.py)
         - [287. Find the Duplicate Number](code/0287_find_the_duplicated_number.py)
+        - [724. Find Pivot Index](code/0724_find_pivot_index.py)
     - Prefix Sum Array
         - [303. Range Sum Query](code/0303_range_sum_query.py)
         - [304. Range Sum Query 2D](code/0304_range_sum_query_2d.py)
@@ -233,6 +234,8 @@
     - [1041. Robot Bounded In Circle](code/1041_robot_bounded_in_circle.py)
 
 16. Misc
+    - String
+        - [179. Largest Number](code/0179_largest_number.py)
     - Intervals
         - [0056. Merge Intervals](code/0056_merge_intervals.py)
         - [1288. Remove Covered Intervals](code/1288_remove_covered_intervals.py)
@@ -273,6 +276,7 @@
         - [307. Range Sum Query - Mutable](code/0307_range_sum_query_mutable.py)
     - Misc
         - [1583. Count Unhappy Friends](code/1583_count_unhappy_friends.py)
+        - [1002. Find Common Characters](code/1002_find_common_characters.py)
 
 # To-do
 - 0010 regular expression matching
