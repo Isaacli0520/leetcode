@@ -25,11 +25,13 @@
         - [645. Set Mismatch](code/0645_set_mismatch.py)
         - [287. Find the Duplicate Number](code/0287_find_the_duplicated_number.py)
         - [724. Find Pivot Index](code/0724_find_pivot_index.py)
+        - [910. Smallest Range II](code/0910_smallest_range.py)
     - Prefix Sum Array
         - [303. Range Sum Query](code/0303_range_sum_query.py)
         - [304. Range Sum Query 2D](code/0304_range_sum_query_2d.py)
         - [560. Subarray Sum Equals K](code/0560_subarray_sum_equals_k.py)
         - [238. Product of Array Except Self](code/0238_product_of_array_except_self.py)
+        - [974. Subarray Sums Divisible by K](code/0974_subarray_sums_divisible_by_k.py)
     - Difference Array
         - [1094. Car Pooling](code/1094_car_pooling.py)
         - [1109. Corporate Flight Booking](code/1109_corporate_flight_bookings.py)

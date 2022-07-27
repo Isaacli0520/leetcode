@@ -11,12 +11,11 @@ class Solution:
                     res[i][j] = 0
         
         while q:
-            for i in range(len(q)):
-                x, y = q.popleft()
-                for m, n in [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]:
-                    if 0 <= m < r and 0 <= n < c and res[m][n] == -1:
-                        res[m][n] = 1 + res[x][y]
-                        q.append((m, n))
+            x, y = q.popleft()
+            for m, n in [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]:
+                if 0 <= m < r and 0 <= n < c and res[m][n] == -1:
+                    res[m][n] = 1 + res[x][y]
+                    q.append((m, n))
         return res
                         
                         
